@@ -18,11 +18,14 @@ jobs:
           node --check src/lineage.js
           node scripts/check-catalog.mjs
       - name: Verify required wiki artifacts
-        run: test -s index.html && test -s AGENTS.md && test -s README.md
+        run: test -s index.html && test -s AGENTS.md && test -s README.md && test -s src/catalog.js && test -s src/network.js && test -s src/lineage.js && test -s src/lineage.css && test -s data/catalog.json
       - uses: actions/upload-artifact@v4
         with:
           name: netoraria-private-preview
           path: |
             index.html
-            src/app.js
+            src/
+            data/catalog.json
+            docs/
             README.md
+            AGENTS.md
