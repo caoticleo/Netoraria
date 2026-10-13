@@ -1,11 +1,11 @@
 {
   "meta": {
     "name": "Netoraria",
-    "version": "0.5.0-studio-network",
+    "version": "0.6.0-lineage",
     "as_of": "2026-10-13",
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
     "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
-    "research_focus": "production-studio / release-label / originating-studio and artist credits are separate attributed graph entities"
+    "research_focus": "Studio-first NTR animation encyclopedia with independently verified adult game connections and non-promotional publisher reissue metadata"
   },
   "sources": [
     {
@@ -199,6 +199,30 @@
       "title": "Third-party T-REX credit lead for Tsuma ni Damatte (needs primary confirmation)",
       "url": "https://www.animecharactersdatabase.com/source.php?id=107126",
       "evidence": "community"
+    },
+    {
+      "id": "S45",
+      "url": "https://www.lune-soft.jp/game/30243",
+      "title": "Netorareiyā official 2025 game product, staff and adult-character bios",
+      "evidence": "primary"
+    },
+    {
+      "id": "S46",
+      "url": "https://www.mediabank.co.jp/label.php?id=14",
+      "title": "GOLD BEAR manufacturer catalog: January 30 2026 DVD/Blu-ray complete editions",
+      "evidence": "primary"
+    },
+    {
+      "id": "S47",
+      "url": "https://www.lune-soft.jp/news/26424",
+      "title": "2023 Minamoto adaptation launch and announcement of future joint NTR game",
+      "evidence": "primary"
+    },
+    {
+      "id": "S48",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=1&stat=0",
+      "title": "Media Bank Queen Bee catalog: March 2026 complete edition, not new episode",
+      "evidence": "primary"
     }
   ],
   "works": [
@@ -499,6 +523,78 @@
         "#50566b",
         "#88657e"
       ]
+    },
+    {
+      "id": "W-NETORAREIYA",
+      "title": "Netorareiyā: Kaijō-hen",
+      "jp": "ネトラレイヤー 夫の会社の手伝いでコスプレをするんじゃなかった 会場編",
+      "media": "PC game",
+      "label": "Rune TeamBitters",
+      "year": 2025,
+      "genre": "publisher-NTR",
+      "source_ids": [
+        "S45",
+        "S47"
+      ],
+      "original": null,
+      "characters": [
+        {
+          "name": "Hirozawa Akane",
+          "jp": "広澤 茜音",
+          "age": 27,
+          "age_confidence": "explicit publisher character profile",
+          "role": "Working adult and spouse",
+          "source_ids": [
+            "S45"
+          ]
+        },
+        {
+          "name": "Hirozawa Katsuyuki",
+          "jp": "広澤 克行",
+          "age": 27,
+          "age_confidence": "explicit publisher character profile",
+          "role": "Working adult and spouse",
+          "source_ids": [
+            "S45"
+          ]
+        },
+        {
+          "name": "Hatakeyama Hinami",
+          "jp": "畠山 陽海",
+          "age": 23,
+          "age_confidence": "explicit publisher character profile",
+          "role": "Professional cosplayer",
+          "source_ids": [
+            "S45"
+          ]
+        }
+      ],
+      "note": "An independently released NTR game from 2025 sharing original artist Minamoto with the 2023 animated OVA. It is NOT an adaptation of that OVA. Adults' ages come from the publisher's individual biographies.",
+      "visibility": "context-only",
+      "color": [
+        "#415d7a",
+        "#7b5389"
+      ]
+    },
+    {
+      "id": "W-KEDAMONO",
+      "title": "Kedamono (Kazoku)-tachi no Sumu Ie",
+      "jp": "ケダモノ(家族)たちの住む家で",
+      "media": "OVA",
+      "label": "GOLD BEAR",
+      "year": 2026,
+      "genre": "NTR title in manufacturer catalog",
+      "source_ids": [
+        "S46"
+      ],
+      "original": null,
+      "characters": [],
+      "note": "Manufacturer directly lists DVD and Blu-ray value-price editions dated January 30, 2026. This is evidence of a prior existing animation distributed in two formats, NOT a newly produced 2026 OVA. Unverified original episode dates, cast and age context. Kept as bibliography/research rather than a browsing recommendation.",
+      "visibility": "context-only",
+      "color": [
+        "#726450",
+        "#3f5574"
+      ]
     }
   ],
   "releases": [
@@ -761,6 +857,45 @@
       ],
       "status": "scheduled",
       "confidence": "publisher"
+    },
+    {
+      "id": "R25-GAME-01",
+      "work_id": "W-NETORAREIYA",
+      "date": "2025-12-19",
+      "title": "Netorareiyā: Kaijō-hen PC game",
+      "type": "original_game",
+      "sku": null,
+      "source_ids": [
+        "S45"
+      ],
+      "status": "listed",
+      "confidence": "publisher"
+    },
+    {
+      "id": "R26-GBR-DVD",
+      "work_id": "W-KEDAMONO",
+      "date": "2026-01-30",
+      "title": "Kedamono (Kazoku)-tachi no Sumu Ie — Complete Edition (DVD)",
+      "type": "compilation",
+      "sku": "GBR-036",
+      "source_ids": [
+        "S46"
+      ],
+      "status": "listed",
+      "confidence": "publisher"
+    },
+    {
+      "id": "R26-GBR-BD",
+      "work_id": "W-KEDAMONO",
+      "date": "2026-01-30",
+      "title": "Kedamono (Kazoku)-tachi no Sumu Ie — Complete Edition (Blu-ray)",
+      "type": "compilation",
+      "sku": "GBR-B008",
+      "source_ids": [
+        "S46"
+      ],
+      "status": "listed",
+      "confidence": "publisher"
     }
   ],
   "chronology": [
@@ -907,6 +1042,18 @@
       "date": "2026-11-27",
       "title": "Otonari no Nie release scheduled; restricted context",
       "source_id": "S33"
+    },
+    {
+      "id": "T25",
+      "date": "2025-12-19",
+      "title": "Minamoto's independent NTR game Netorareiyā released by Rune TeamBitters.",
+      "source_id": "S45"
+    },
+    {
+      "id": "T26",
+      "date": "2026-01-30",
+      "title": "Media Bank GOLD BEAR DVD and Blu-ray complete-edition reissues (not new animation).",
+      "source_id": "S46"
     }
   ],
   "review_queue": [
@@ -948,6 +1095,14 @@
       "source_ids": [
         "S43",
         "S44"
+      ]
+    },
+    {
+      "id": "Q-GOLD-ORIGINAL",
+      "title": "Kedamono original animation date and character ages",
+      "reason": "Do not infer the 2026 complete edition is an original OVA. Determine the original episode/year, production studio, adult-character status and original media before public discovery.",
+      "source_ids": [
+        "S46"
       ]
     }
   ],
@@ -1023,7 +1178,8 @@
       "history": "The Queen Bee catalog documents historical original episodes alongside later complete-edition releases. It does not automatically establish which animation studio physically produced each entry.",
       "source_ids": [
         "S40",
-        "S41"
+        "S41",
+        "S46"
       ],
       "color": [
         "#665365",
@@ -1093,7 +1249,8 @@
       "history": "The 2026 OVA compilation credits the earlier TeamBitters game and a separate animated staff team, documenting a game-to-animation adaptation chain.",
       "source_ids": [
         "S38",
-        "S10"
+        "S10",
+        "S45"
       ],
       "color": [
         "#526b61",
@@ -1133,6 +1290,23 @@
       "color": [
         "#566a74",
         "#7b6975"
+      ]
+    },
+    {
+      "id": "ORG-GOLDBEAR",
+      "name": "GOLD BEAR",
+      "ja": "GOLD BEAR",
+      "kind": "animation_label",
+      "summary": "Media Bank adult-animation label with January 2026 DVD and Blu-ray complete-edition catalog entries carrying an NTR-associated title. These are reissues, not new animation episodes.",
+      "start": null,
+      "end": "2026",
+      "history": "A currently verifiable 2026 label catalog includes two physical-format editions of the same compiled title. Neither the original animation studio nor original episode chronology has yet been independently established.",
+      "source_ids": [
+        "S46"
+      ],
+      "color": [
+        "#736042",
+        "#444e76"
       ]
     }
   ],
@@ -1252,9 +1426,22 @@
       "name": "Minamoto",
       "ja": "みな本",
       "kind": "original_artist",
-      "summary": "Original creator of the adult-marriage NTR comic adapted into the 2023 two-part Tsuma ni Damatte Sokubaikai ni Iku n Janakatta OVA.",
+      "summary": "Original comic artist for the 2023 Antekinussu animated adaptation and original artist of the distinct 2025 Rune TeamBitters NTR game Netorareiyā. This is a shared-artist link, not an adaptation link.",
       "source_ids": [
-        "S43"
+        "S43",
+        "S45",
+        "S47"
+      ]
+    },
+    {
+      "id": "CR-SHAA",
+      "name": "Shaa Senyou Maru",
+      "ja": "シャア専用◎",
+      "kind": "scenario_writer",
+      "summary": "Scenario writer credited alongside original artist Minamoto on Rune TeamBitters' 2025 adult PC game Netorareiyā.",
+      "source_ids": [
+        "S45",
+        "S47"
       ]
     }
   ],
@@ -1654,6 +1841,65 @@
       "source_ids": [
         "S43"
       ]
+    },
+    {
+      "work_id": "W-NETORAREIYA",
+      "entity_type": "organization",
+      "entity_id": "ORG-TEAMBITTERS",
+      "role": "original_game_brand",
+      "source_ids": [
+        "S45"
+      ]
+    },
+    {
+      "work_id": "W-NETORAREIYA",
+      "entity_type": "creator",
+      "entity_id": "CR-MINAMOTO",
+      "role": "original_artist",
+      "source_ids": [
+        "S45"
+      ]
+    },
+    {
+      "work_id": "W-NETORAREIYA",
+      "entity_type": "creator",
+      "entity_id": "CR-SHAA",
+      "role": "screenplay",
+      "source_ids": [
+        "S45"
+      ]
+    },
+    {
+      "work_id": "W-KEDAMONO",
+      "entity_type": "organization",
+      "entity_id": "ORG-GOLDBEAR",
+      "role": "release_label",
+      "source_ids": [
+        "S46"
+      ]
+    },
+    {
+      "work_id": "W-KEDAMONO",
+      "entity_type": "organization",
+      "entity_id": "ORG-MEDIABANK",
+      "role": "publisher",
+      "source_ids": [
+        "S46"
+      ]
+    }
+  ],
+  "relations": [
+    {
+      "id": "REL-MINAMOTO-2023-2025",
+      "from_work_id": "W-TS",
+      "to_work_id": "W-NETORAREIYA",
+      "relation": "shared_original_artist",
+      "creator_id": "CR-MINAMOTO",
+      "source_ids": [
+        "S45",
+        "S47"
+      ],
+      "note": "Distinct original works sharing artist Minamoto; game is not adaptation of the 2023 animation."
     }
   ]
 }
