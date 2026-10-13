@@ -45,6 +45,35 @@ assert.equal(C.works.find(w=>w.id==="W-KEDAMONO").visibility,"context-only","unv
 const referenced=new Set(C.credits.filter(c=>c.work_id==="W-NETORAREIYA").map(x=>x.entity_id));
 assert.ok(referenced.has("CR-MINAMOTO")&&referenced.has("ORG-TEAMBITTERS"),"2025 original game provenance missing");
 
+
+/* v0.7 third-party leads must never manufacture series or episode identities */
+const franchises=C.franchise_links||[],leadList=C.research_leads||[];
+unique(franchises.map(x=>x.id),"franchise link IDs");
+unique(leadList.map(x=>x.id),"research lead IDs");
+for(const f of franchises){
+ assert.ok(works.has(f.from_work_id)&&works.has(f.to_work_id)&&f.from_work_id!==f.to_work_id,"franchise relation invalid");
+ assert.equal(f.type,"sequel","franchise link has unknown type");
+ for(const sid of f.source_ids)assert.ok(sources.has(sid),"franchise citation missing");
+}
+for(const lead of leadList){assert.ok(lead.title&&lead.reason&&lead.source_ids.length);for(const sid of lead.source_ids)assert.ok(sources.has(sid),"unattributed source lead");}
+for(const w of C.works){if(w.aliases){unique(w.aliases,"aliases in "+w.id);assert.ok(w.aliases.every(a=>typeof a==="string"&&a.length>0));}}
+assert.equal(C.works.find(w=>w.id==="W-KANOCHI").visibility,"restricted-context","age-uncertain family work cannot be a public recommendation");
+const queen25=C.releases.filter(r=>r.work_id==="W-BAKUNYU").sort((a,b)=>a.date.localeCompare(b.date));
+assert.deepEqual(queen25.map(r=>[r.date,r.sku,r.type,r.confidence]),[
+ ["2025-09-12","QNB-M163","original_ova","publisher"],
+ ["2025-10-10","QNB-M165","original_ova","publisher"]
+],"manufacturer SKU/date mismatch for two original Queen Bee OVAs");
+const merry=C.releases.filter(r=>r.work_id==="W-AKOGARE").sort((a,b)=>a.date.localeCompare(b.date));
+assert.deepEqual(merry.map(r=>[r.date,r.sku,r.confidence]),[
+ ["2025-04-04","MJAD-395","retailer"],
+ ["2025-06-06","MJAD-399","retailer"]
+],"Merry Jane original episodes mistyped");
+assert.equal(C.works.filter(w=>w.id==="W-NS").length,1,"Natsu Zuma must be an alias not a second series");
+assert.ok(C.works.find(w=>w.id==="W-NS").aliases.includes("Natsu Zuma"));
+assert.ok(C.works.find(w=>w.id==="W-KGB").aliases.some(a=>a.includes("episode")),"episode color aliases require review");
+assert.ok(C.credits.some(c=>c.work_id==="W-BAKUNYU"&&c.entity_id==="ORG-QUEEN"&&c.role==="release_label"));
+assert.ok(C.credits.some(c=>c.work_id==="W-BAKUNYU"&&c.entity_id==="CR-GAGARIN"&&c.role==="original_artist"));
+
 const snapshot=readFileSync("src/catalog.js","utf8").trim();assert.ok(snapshot.startsWith("window.NetorariaCatalog = "),"client data wrapper missing");const mirrored=JSON.parse(snapshot.slice("window.NetorariaCatalog = ".length).replace(/;$/,""));assert.deepEqual(mirrored,C,"client-side catalog snapshot is out of sync");
 const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/lineage.js")&&html.includes("src/lineage.css"),"release explorer not loaded");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
 console.log("Validated",C.works.length,"works,",C.releases.length,"release/edition records,",C.sources.length,"sources,",C.chronology.length,"timeline nodes,",C.organizations.length,"organizations,",C.creators.length,"artists,",C.credits.length,"verified credit edges.");
