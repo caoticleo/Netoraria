@@ -1,11 +1,11 @@
 {
   "meta": {
     "name": "Netoraria",
-    "version": "0.7.0-2025-crosscheck",
+    "version": "0.8.0-completion-first",
     "as_of": "2026-10-13",
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
     "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
-    "research_focus": "Independent adult-animation calendar as lead; publisher/retailer bibliographic verification and source-medium/credit crosschecks",
+    "research_focus": "Completion-first discovery coverage with independent publication/genre/identity/age-confidence; verification and depth follow separately",
     "release_calendar_policy": "A generic adult-media index's listed date is an archival lead, not automatic evidence of the Japan-original publisher release, subtitle availability date or rights for imagery.",
     "source_2025_findings": "Queen Bee 2025 exact product dates and SKUs upgraded from retailer corroboration to primary manufacturer documentation in S61; Merry Jane dates retain retailer level."
   },
@@ -303,6 +303,48 @@
       "url": "https://www.mediabank.co.jp/label.php?id=22&pg=2&stat=0",
       "title": "Media Bank primary manufacturer Queen Bee 2025 original episodes: 2025-09-12 QNB-M163 and 2025-10-10 QNB-M165",
       "evidence": "primary"
+    },
+    {
+      "id": "S62",
+      "url": "https://www.underhentai.net/",
+      "title": "UnderHentai public site navigation confirms separate Netorare and Netori genre menu links",
+      "evidence": "community"
+    },
+    {
+      "id": "S63",
+      "url": "https://www.underhentai.net/releases/2026/",
+      "title": "UnderHentai 2026 calendar; includes scheduled future entries, not proof of completed releases",
+      "evidence": "community"
+    },
+    {
+      "id": "S64",
+      "url": "https://bangumi.tv/person/36264/works/position/42",
+      "title": "Bangumi nür creator credits / 2026 OVA leads, community sourced",
+      "evidence": "community"
+    },
+    {
+      "id": "S65",
+      "url": "https://bangumi.tv/person/51530/works",
+      "title": "Bangumi Circle Hemoglobin 2026 adaptation leads, community sourced",
+      "evidence": "community"
+    },
+    {
+      "id": "S66",
+      "url": "https://www.lifehaki.com/title/sare-tsuma-wa-ubawaretai",
+      "title": "Third-party Sare Tsuma wa Ubawaretai 2026 metadata; age and source unverified by publisher",
+      "evidence": "community"
+    },
+    {
+      "id": "S67",
+      "url": "https://bangumi.tv/person/13243/works?sort=date",
+      "title": "Bangumi A1C works: NTR Kishi, Hitori Tsuma, upcoming Ochiru Part Tsuma; staff relationships only tentative",
+      "evidence": "community"
+    },
+    {
+      "id": "S68",
+      "url": "https://bangumi.tv/anime/tag/NTR/airtime/2026",
+      "title": "Community NTR tag listing, unverified and overinclusive",
+      "evidence": "community"
     }
   ],
   "works": [
@@ -2340,6 +2382,671 @@
         "S13"
       ],
       "state": "alias-review"
+    }
+  ],
+  "taxonomy": {
+    "version": "0.8",
+    "facets": [
+      {
+        "id": "netorare",
+        "label": "Netorare",
+        "ja": "寝取られ",
+        "axis": "viewpoint",
+        "note": "Narrative position of loss/betrayal; publisher/fan tags can differ",
+        "parent": null
+      },
+      {
+        "id": "netori",
+        "label": "Netori",
+        "ja": "寝取り",
+        "axis": "viewpoint",
+        "note": "Perspective of person pursuing someone else's partner; not synonymous with netorare",
+        "parent": null
+      },
+      {
+        "id": "netorase",
+        "label": "Netorase",
+        "ja": "寝取らせ",
+        "axis": "relationship-agreement",
+        "note": "Third-party encounter encouraged/arranged by partner; factual consent and agreement require narrative context",
+        "parent": null
+      },
+      {
+        "id": "bss",
+        "label": "BSS",
+        "ja": "僕が先に好きだったのに",
+        "axis": "relationship-stage",
+        "note": "Unrealized romantic possibility rather than necessarily existing relationship",
+        "parent": null
+      },
+      {
+        "id": "cheating",
+        "label": "Cheating",
+        "ja": "浮気",
+        "axis": "relationship-event",
+        "note": "Violation of agreed exclusivity; neither always NTR nor identical to coercion",
+        "parent": null
+      },
+      {
+        "id": "infidelity",
+        "label": "Infidelity",
+        "ja": "不倫",
+        "axis": "relationship-event",
+        "note": "Affair/adultery tag, not sufficient for NTR perspective classification",
+        "parent": null
+      },
+      {
+        "id": "jealousy",
+        "label": "Jealousy",
+        "ja": "嫉妬",
+        "axis": "emotion",
+        "note": "An emotional response or narrative motif, not a sexual-genre classification",
+        "parent": null
+      },
+      {
+        "id": "betrayal",
+        "label": "Betrayal",
+        "ja": "裏切り",
+        "axis": "narrative-theme",
+        "note": "Loss of trust or deception; context-dependent",
+        "parent": null
+      },
+      {
+        "id": "love-triangle",
+        "label": "Love triangle",
+        "ja": "三角関係",
+        "axis": "relationship-structure",
+        "note": "Three-person dynamic may occur with or without cheating/NTR",
+        "parent": null
+      },
+      {
+        "id": "consensual-nonmonogamy",
+        "label": "Consensual nonmonogamy",
+        "ja": null,
+        "axis": "relationship-agreement",
+        "note": "Agreed nonexclusive arrangement; should not be tagged as betrayal automatically",
+        "parent": null
+      },
+      {
+        "id": "cuckoldry",
+        "label": "Cuckoldry",
+        "ja": null,
+        "axis": "perspective-fantasy",
+        "note": "Cross-language overlap varies with NTR, netorase, and consensual kink; not an automatic synonym",
+        "parent": null
+      },
+      {
+        "id": "coercion",
+        "label": "Coercion (editorial context)",
+        "ja": "強制",
+        "axis": "content-warning",
+        "note": "Coercion must never be described as consensual cheating by the coerced person",
+        "parent": null
+      }
+    ],
+    "external_mappings": [
+      {
+        "platform": "UnderHentai",
+        "external_label": "Netorare",
+        "facet_id": "netorare",
+        "status": "menu-link-observed",
+        "source_ids": [
+          "S62"
+        ],
+        "genre_page_verified": false
+      },
+      {
+        "platform": "UnderHentai",
+        "external_label": "Netori",
+        "facet_id": "netori",
+        "status": "menu-link-observed",
+        "source_ids": [
+          "S62"
+        ],
+        "genre_page_verified": false
+      },
+      {
+        "platform": "UnderHentai",
+        "external_label": "Cheating",
+        "facet_id": "cheating",
+        "status": "not-in-observed-menu",
+        "source_ids": [
+          "S62"
+        ],
+        "genre_page_verified": false
+      },
+      {
+        "platform": "Generic catalogs",
+        "external_label": "NTR",
+        "facet_id": "netorare",
+        "status": "ambiguous-umbrella",
+        "source_ids": [
+          "S68"
+        ],
+        "genre_page_verified": false
+      }
+    ]
+  },
+  "discovery_candidates": [
+    {
+      "id": "D25-01",
+      "title": "Natsu Zuma / Natsuzuma",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "official NTR label and third-party calendar",
+      "episode_hints": [
+        "2025-10-31 (two episodes)"
+      ],
+      "source_ids": [
+        "S49",
+        "S13"
+      ],
+      "matched_work_id": "W-NS",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "adult-context-publisher",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Alias of W-NS; never duplicate a work.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-02",
+      "title": "Kegareboshi (Blue / Red)",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "publisher NTR category + third-party release dates",
+      "episode_hints": [
+        "2025-12-26 (index EP 1/2)"
+      ],
+      "source_ids": [
+        "S49",
+        "S14"
+      ],
+      "matched_work_id": "W-KGB",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "age-not-explicit",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Map index numbers to color-named publisher editions; dates confirmed, ordinal mapping still review.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-03",
+      "title": "Netorareta Bakunyuu Tsuma-tachi",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "manufacturer product and title language",
+      "episode_hints": [
+        "2025-09-12",
+        "2025-10-10"
+      ],
+      "source_ids": [
+        "S49",
+        "S61"
+      ],
+      "matched_work_id": "W-BAKUNYU",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Confirmed manufacturer SKU parts QNB-M163/165.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-04",
+      "title": "Akogare no Onna Joushi ga, Aibeya Shucchou...",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Japanese original title and specialist retailer",
+      "episode_hints": [
+        "2025-04-04",
+        "2025-06-06"
+      ],
+      "source_ids": [
+        "S49",
+        "S53",
+        "S54"
+      ],
+      "matched_work_id": "W-AKOGARE",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "adult-office-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Merry Jane original ep1/2, manufacturer studio not established.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-05",
+      "title": "Kanochi x Netorare Kazoku The Animation",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "original Japanese title",
+      "episode_hints": [
+        "2025-03-21 (indexed)",
+        "2025-05-30 (retailer)"
+      ],
+      "source_ids": [
+        "S49",
+        "S56"
+      ],
+      "matched_work_id": "W-KANOCHI",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "context-only",
+      "age_context": "age-uncertain-family",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Youth-risk / family framing; never promoted.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-06",
+      "title": "Kyou wa Yubiwa o Hazusu kara…",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "infidelity"
+      ],
+      "tag_basis": "tentative relationship/marital title; NOT NTR proof",
+      "episode_hints": [
+        "2025-07-25",
+        "2025-12-26"
+      ],
+      "source_ids": [
+        "S49"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Publisher staff and original source needed before public display.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-07",
+      "title": "Motokare to wa Dekinakatta Sex Shitemo Ii Desuka?",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "cheating"
+      ],
+      "tag_basis": "speculative from title; NOT tagged NTR",
+      "episode_hints": [
+        "2025-06-27"
+      ],
+      "source_ids": [
+        "S49"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Ex-relationship language alone does not establish infidelity. Low-confidence breadth lead.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-08",
+      "title": "Yume Miru Otome / Tonari no Kanojo",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "publisher label and season listing",
+      "episode_hints": [
+        "2025-03-28 (index EP03)",
+        "2025-06-27 (publisher product)"
+      ],
+      "source_ids": [
+        "S49",
+        "S28"
+      ],
+      "matched_work_id": "W-YMO",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "context-only",
+      "age_context": "school-age-framing",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Publisher work framing means neutral academic bibliography only.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-09",
+      "title": "Fuuki Iin to Fuuzoku Katsudou",
+      "year": 2025,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [],
+      "tag_basis": "index text only; genre not proven",
+      "episode_hints": [
+        "2025-04-25 two indexed entries"
+      ],
+      "source_ids": [
+        "S49"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "context-only",
+      "age_context": "school-age-framing",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Research-only sensitive historical entry; cannot become fan recommendation.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-01",
+      "title": "Netorareta Bakunyuu Tsuma-tachi 2",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "original title + third-party indexing",
+      "episode_hints": [
+        "2026-09-18 first listed",
+        "2026-10-16 second scheduled"
+      ],
+      "source_ids": [
+        "S63",
+        "S31"
+      ],
+      "matched_work_id": "W-QUEEN2",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "The Oct 16 calendar date is FUTURE as of Oct 13; retailer verification of second episode outstanding.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-02",
+      "title": "Kegareboshi (Purple / Black)",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "original publisher tag + source dates",
+      "episode_hints": [
+        "2026-03-27 two original OVAs"
+      ],
+      "source_ids": [
+        "S63",
+        "S04",
+        "S05"
+      ],
+      "matched_work_id": "W-KGB",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "public-linked",
+      "age_context": "age-not-explicit",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Existing series continuation, not new work.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-03",
+      "title": "Sare Tsuma wa Ubawaretai",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "infidelity",
+        "betrayal"
+      ],
+      "tag_basis": "third-party synopsis and spouse narrative (not confirmed NTR viewpoint)",
+      "episode_hints": [
+        "2026-08-28 first indexed",
+        "2026-11-27 second listed future"
+      ],
+      "source_ids": [
+        "S63",
+        "S66",
+        "S64"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "candidate-public",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "nür involvement from community-staff index; animation studio/publisher verification pending.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-04",
+      "title": "Hitori Tsuma",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "infidelity"
+      ],
+      "tag_basis": "wife theme, infidelity needs plot check",
+      "episode_hints": [
+        "2026-10-30 future"
+      ],
+      "source_ids": [
+        "S63",
+        "S67",
+        "S65"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "candidate-public",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Scheduled, not released; NTR classification not established.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-05",
+      "title": "Ochiru Part Tsuma – Toshishita Otoko to no Jouji ni Oboreta Hate ni…",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "infidelity"
+      ],
+      "tag_basis": "adult wife + affair theme supported by original visual novel synopsis",
+      "episode_hints": [
+        "2026-11-27 future"
+      ],
+      "source_ids": [
+        "S63",
+        "S67"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "candidate-public",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Original is PC game; anime adaptation and studio must be verified.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-06",
+      "title": "NTR Kishi",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "NTR appears in title, no narrative/age verification",
+      "episode_hints": [
+        "2026-09-25 first indexed",
+        "2026-11-27 second future"
+      ],
+      "source_ids": [
+        "S63",
+        "S67"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "No first-party character-age/context; title is not enough for public recommendation.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-07",
+      "title": "Otonari no Nie",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [],
+      "tag_basis": "specialist label association; lacks publisher NTR tag",
+      "episode_hints": [
+        "2026-11-27 two scheduled"
+      ],
+      "source_ids": [
+        "S63",
+        "S33",
+        "S34"
+      ],
+      "matched_work_id": "W-ONN",
+      "stage": "matched_existing",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "context-only",
+      "age_context": "school-age-framing",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Hold neutral archival-only record, no promotional recommendation.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-08",
+      "title": "Furachi",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [],
+      "tag_basis": "label association alone; lacks publisher NTR categorization",
+      "episode_hints": [
+        "2026-06-26 two entries"
+      ],
+      "source_ids": [
+        "S63",
+        "S03"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Not NTR-tagged solely because of Antekinussu affiliation.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-09",
+      "title": "Muramata-san no Aijou",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [],
+      "tag_basis": "index date only; publisher genre unknown",
+      "episode_hints": [
+        "2026-09-11 first indexed",
+        "2026-10-09 second indexed"
+      ],
+      "source_ids": [
+        "S63"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "No proven cheating or NTR framing. Screen first.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-10",
+      "title": "Hamehara",
+      "year": 2026,
+      "media": "OVA (discovery candidate)",
+      "candidate_tag_ids": [
+        "coercion"
+      ],
+      "tag_basis": "sexual harassment theme; not synonymous with netorare",
+      "episode_hints": [
+        "2026-06-26 two episode listings"
+      ],
+      "source_ids": [
+        "S63",
+        "S65"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "unverified unless linked to canonical research record",
+      "display_status": "internal-review",
+      "age_context": "adult-workplace-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Do not auto-map harassment to cheating/NTR. Editorial-only candidate pending audience relevance.",
+      "last_checked": "2026-10-13"
+    }
+  ],
+  "coverage_objectives": [
+    {
+      "id": "cov-animated-2025",
+      "title": "2025 animated releases",
+      "scope": "calendar-led selective NTR/adjacent titles, NOT all hentai",
+      "source_ids": [
+        "S49"
+      ],
+      "status": "incomplete",
+      "notes": "Manually sourced entries, no site-wide scrape or total census; completeness cannot be measured until a defined source snapshot is licensed/allowed."
+    },
+    {
+      "id": "cov-animated-2026",
+      "title": "2026 animated releases",
+      "scope": "through 2026-10-13; future entries separate",
+      "source_ids": [
+        "S63"
+      ],
+      "status": "incomplete",
+      "notes": "Future listings may change; chronology dates are source-reported, not independently verified."
+    },
+    {
+      "id": "cov-netorare-genre",
+      "title": "UnderHentai netorare tag",
+      "scope": "source-specific tag membership",
+      "source_ids": [
+        "S62"
+      ],
+      "status": "blocked",
+      "notes": "Genre page inaccessible through current browser despite menu link. No invented member list or count."
+    },
+    {
+      "id": "cov-netori-genre",
+      "title": "UnderHentai netori tag",
+      "scope": "source-specific tag membership",
+      "source_ids": [
+        "S62"
+      ],
+      "status": "blocked",
+      "notes": "Genre page inaccessible through current browser despite menu link. No invented member list or count."
     }
   ]
 }
