@@ -62,6 +62,14 @@ Read [completion-first methodology](docs/COMPLETION_FIRST_v08.md) before interpr
 
 See [v0.9 research and source-window report](docs/BACKFILL_AND_COVERAGE_v09.md). Commercial publisher imagery remains unlicensed and is not mirrored; age-sensitive entries are neutral internal research only.
 
+## Competitive audit v0.10 (October 2026)
+
+The leading cross-media competitor [NTRDB](https://ntrdb.com/) publicly lists **20,351 works** across media, **8,000 characters**, **5,963 producers and circles**, **982 structured work tags**, ratings, a calendar, lists, community proposals, a feed, spoilers and personalized tag blacklisting. Those are its own dynamic published metrics, not animation-only audited totals. Netoraria does **not** claim feature or catalog parity today. [Read the structured 21-capability benchmark](data/competitive-benchmark-2026-10.json) and [editorial audit and roadmap](docs/NTRDB_COMPETITIVE_AUDIT_2026-10-13.md).
+
+NTRDB's [terms](https://ntrdb.com/terms) expressly forbid systematic copying without permission. This project will **not** bulk import its 20k+ records, fan-added tags, imagery, ratings or user content. Instead: independently gather publisher-approved anime/episode metadata and seek a documented data partnership if permissioned interoperability would help.
+
+Immediate user-facing improvement: an accessible **Hide themes** panel in Discovery, based solely on Netoraria's own taxonomy. It suppresses matching discovery results for the current browsing session, requires no account, and writes no preferences to server/browser storage. It is **not** persistent or account-synced. Public site remains non-graphic, not commercially deployed.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
