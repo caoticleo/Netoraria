@@ -104,6 +104,28 @@ for(const id of ["cov-netorare-genre","cov-netori-genre"])assert.equal(C.coverag
 assert.ok(C.discovery_candidates.length>=15,"insufficient breadth-first discovery sample");
 assert.ok(C.discovery_candidates.filter(x=>x.matched_work_id).length>=8,"loss of canonical alias matches");
 
+
+/* v0.9: source-window integrity and release deduplication */
+unique(C.source_observations.map(x=>x.id),"publisher observation IDs");
+for(const o of C.source_observations){
+ assert.ok(sources.has(o.source_id),"orphan source inventory "+o.id);
+ assert.ok(o.observed_items>0&&Number.isInteger(o.observed_items),"source window must be nonzero observed count");
+ assert.equal(o.complete,false,"cannot mark sampled external catalog window complete");
+ assert.match(o.as_of,/^\\d{4}-\\d{2}-\\d{2}$/,"observation date");
+ if(o.full_catalog_total_displayed!=null)assert.ok(o.full_catalog_total_displayed>=o.observed_items,"source catalog denominator suspicious");
+}
+const v2019=works.get("W-YUE");assert.ok(v2019&&v2019.visibility==="public"&&v2019.year===2019,"missing 2019 public wiki series");
+const yue=C.releases.filter(r=>r.work_id==="W-YUE").sort((a,b)=>a.date.localeCompare(b.date));
+assert.deepEqual(yue.map(x=>[x.date,x.sku,x.type,x.confidence]),[["2019-02-22","QNB-M058","original_ova","retailer"],["2019-04-12","QNB-M061","original_ova","retailer"]],"2019 Queen Bee SKU mismatch");
+const sequel=C.releases.find(x=>x.id==="R26-05");
+assert.ok(sequel&&sequel.sku==="QNB-M190"&&sequel.type==="original_ova"&&sequel.confidence==="publisher","2026 manufacturer sequel status inaccurate");
+const skuIndex=new Map();
+for(const r of C.releases){if(!r.sku)continue;const key=(r.confidence==="publisher"?"official:":"listed:")+r.sku;if(skuIndex.has(key))assert.fail("two release records reuse product identity "+key);skuIndex.set(key,r.id)}
+for(const x of C.discovery_candidates){
+ if(x.same_as_candidate_id){const other=C.discovery_candidates.find(y=>y.id===x.same_as_candidate_id);assert.ok(other&&other.id!==x.id,"alias candidate missing");}
+}
+assert.ok(C.discovery_candidates.some(x=>x.year===2019&&x.matched_work_id==="W-YUE"),"pre-2025 discovery frontier not backfilled");
+
 const snapshot=readFileSync("src/catalog.js","utf8").trim();assert.ok(snapshot.startsWith("window.NetorariaCatalog = "),"client data wrapper missing");const mirrored=JSON.parse(snapshot.slice("window.NetorariaCatalog = ".length).replace(/;$/,""));assert.deepEqual(mirrored,C,"client-side catalog snapshot is out of sync");
-const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/lineage.js")&&html.includes("src/lineage.css"),"release explorer not loaded");assert.ok(html.includes("src/discovery.js")&&html.includes("src/discovery.css"),"discovery explorer not loaded");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
+const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/lineage.js")&&html.includes("src/lineage.css"),"release explorer not loaded");assert.ok(html.includes("src/discovery.js")&&html.includes("src/discovery.css"),"discovery explorer not loaded");assert.ok(html.includes("src/coverage.js")&&html.includes("src/coverage.css"),"source coverage board not loaded");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
 console.log("Validated",C.works.length,"works,",C.releases.length,"release/edition records,",C.sources.length,"sources,",C.chronology.length,"timeline nodes,",C.organizations.length,"organizations,",C.creators.length,"artists,",C.credits.length,"verified credit edges.");
