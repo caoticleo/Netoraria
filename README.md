@@ -22,6 +22,14 @@ Open `index.html` for mobile-first cover-led search. Wiki detail tabs show relea
 
 This branch adds **Studio / Label** and **Creator / Artist** mobile-friendly directories, linked detail pages, dated credited releases, small relationship graphs and source citations. They distinguish the animation studio from the distributor label, source-game developer, original comic circle, and individual artists. URLs like `#/studio/ORG-TREX` and `#/artist/CR-SATOU` open the corresponding wiki profiles. Series overviews link back to verified creative participants. The current research snapshot has 10 organization profiles, 11 creator profiles, and 44 attributed work-level role edges, with age-sensitive titles hidden from public promotional discovery. See `docs/STUDIOS_AND_CREATORS_v05.md` for detailed evidence and limitations.
 
+## v0.6 draft — Release Explorer & Creator Lineage
+
+- Browse an **interactive year-by-year animation release chart**, filter to original OVAs versus compilations, and open the associated series record.
+- Follow the shared original artist **Minamoto** from the 2023 animated adaptation to a distinct 2025 Rune TeamBitters PC game. The game is *not* an adaptation of the animation. Its non-graphic character bios include three adults with publisher-verified ages.
+- The historical research ledger also has two format editions of a 2026 GOLD BEAR reissue (DVD and Blu-ray). Its origin, character ages and studio are not confirmed, so it is **not** promoted or counted as new episodes.
+- Current data: **12 works**, **23 release/edition/game entries**, **11 organizations**, **12 creators**, **49 work-credit links**, **36 sources**, **26 history nodes** and **1 directly sourced cross-media relationship**. These are research-sample counts, not global industry totals.
+- All versions preserve the non-graphic, cover-licensed-only policy. See `docs/LINEAGE_AND_2026_v06.md`.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
