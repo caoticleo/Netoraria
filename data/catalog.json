@@ -1,10 +1,11 @@
 {
   "meta": {
     "name": "Netoraria",
-    "version": "0.4.0-research",
+    "version": "0.5.0-studio-network",
     "as_of": "2026-10-13",
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
-    "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026"
+    "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
+    "research_focus": "production-studio / release-label / originating-studio and artist credits are separate attributed graph entities"
   },
   "sources": [
     {
@@ -144,6 +145,48 @@
       "url": "https://ntrdb.com/calendar",
       "title": "Community release calendar",
       "evidence": "community"
+    },
+    {
+      "id": "S36",
+      "title": "Natsuzuma #1 publisher product credits",
+      "url": "https://www.lune-soft.jp/ova/29798",
+      "evidence": "primary"
+    },
+    {
+      "id": "S37",
+      "title": "Tsuma ga Kirei ni Natta Wake collection: credits and origin",
+      "url": "https://www.lune-soft.jp/ova/31401",
+      "evidence": "primary"
+    },
+    {
+      "id": "S38",
+      "title": "Soredemo Tsuma wo Aishiteru 2 collection: credits and origin",
+      "url": "https://www.lune-soft.jp/ova/31188",
+      "evidence": "primary"
+    },
+    {
+      "id": "S39",
+      "title": "Kegareboshi Purple: full animated production credits",
+      "url": "https://www.lune-soft.jp/ova/30803",
+      "evidence": "primary"
+    },
+    {
+      "id": "S40",
+      "title": "Media Bank Queen Bee label archive and dated editions",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=1&stat=0",
+      "evidence": "primary"
+    },
+    {
+      "id": "S41",
+      "title": "Media Bank publisher site",
+      "url": "https://www.mediabank.co.jp/",
+      "evidence": "primary"
+    },
+    {
+      "id": "S42",
+      "title": "Antekinussu label complete public catalog",
+      "url": "https://www.lune-soft.jp/ova/brand_ova/antechinus",
+      "evidence": "primary"
     }
   ],
   "works": [
@@ -167,7 +210,8 @@
         "creator": "Satou Kuuki",
         "publisher": "V-Pan's Ecstasy",
         "source_ids": [
-          "S14"
+          "S14",
+          "S39"
         ]
       },
       "characters": [
@@ -209,7 +253,8 @@
         "media": "PC game",
         "creator": "Rune TeamBitters",
         "source_ids": [
-          "S10"
+          "S10",
+          "S38"
         ]
       },
       "characters": [],
@@ -233,9 +278,13 @@
         "S26"
       ],
       "original": {
-        "title": "Not yet corroborated",
-        "media": "Undetermined",
-        "source_ids": []
+        "title": "Tsuma ga Kirei ni Natta Wake",
+        "media": "PC game",
+        "creator": "ORC SOFT",
+        "publisher": "ORC SOFT",
+        "source_ids": [
+          "S37"
+        ]
       },
       "characters": [],
       "note": "Two 2019 episodes, reissued as 2026 pack.",
@@ -286,7 +335,8 @@
         "creator": "Kurozu Gatari",
         "publisher": "DOLL PLAY",
         "source_ids": [
-          "S13"
+          "S13",
+          "S36"
         ]
       },
       "characters": [],
@@ -874,6 +924,691 @@
       "title": "Commercial jacket/cover artwork",
       "reason": "Do not hotlink or reproduce publisher assets without documented rights and appropriate age review.",
       "source_ids": []
+    }
+  ],
+  "organizations": [
+    {
+      "id": "ORG-TREX",
+      "name": "T-REX",
+      "ja": "T-REX",
+      "kind": "animation_studio",
+      "summary": "Credited for animation production (制作) on multiple Antekinussu OVAs. A production-studio credit is not equivalent to ownership of the release label or source comic.",
+      "start": "2018",
+      "end": "2026",
+      "history": "Publisher credits document the studio on adult-oriented NTR-tagged animated releases from 2018 through 2026 within the present sample. This is an observed credited-work span, not a founding date or complete corporate history.",
+      "source_ids": [
+        "S38",
+        "S37",
+        "S39",
+        "S36",
+        "S30"
+      ],
+      "color": [
+        "#1d5366",
+        "#417f7a"
+      ]
+    },
+    {
+      "id": "ORG-ANTE",
+      "name": "Antekinussu",
+      "ja": "あんてきぬすっ",
+      "kind": "animation_label",
+      "summary": "Adult-animation release and planning label whose official publisher catalog includes NTR-tagged OVAs and other themes.",
+      "start": "2018",
+      "end": "2026",
+      "history": "The currently verified label sample begins in late 2018 and extends through the 2026 Kegareboshi installments and compilation editions; the date is not a claim about label foundation. The label's release and planning role must be distinguished from T-REX production credits.",
+      "source_ids": [
+        "S03",
+        "S42",
+        "S39",
+        "S36"
+      ],
+      "color": [
+        "#6f437a",
+        "#8a5877"
+      ]
+    },
+    {
+      "id": "ORG-RUNE",
+      "name": "Rune Pictures / Lune",
+      "ja": "ルネピクチャーズ",
+      "kind": "publisher_portal",
+      "summary": "Publisher and product portal documenting its animation label catalogs, creators, studios, games and original works.",
+      "start": null,
+      "end": null,
+      "history": "Official catalog groups adult-animation products and games under multiple brands. It supplies a source ledger for date, tag, staff and original-material verification.",
+      "source_ids": [
+        "S03",
+        "S42"
+      ],
+      "color": [
+        "#454e7e",
+        "#37747f"
+      ]
+    },
+    {
+      "id": "ORG-MEDIABANK",
+      "name": "Media Bank",
+      "ja": "メディアバンク",
+      "kind": "publisher",
+      "summary": "Commercial publisher maintaining the Queen Bee product catalog and dated DVD editions.",
+      "start": null,
+      "end": "2026",
+      "history": "The Queen Bee catalog documents historical original episodes alongside later complete-edition releases. It does not automatically establish which animation studio physically produced each entry.",
+      "source_ids": [
+        "S40",
+        "S41"
+      ],
+      "color": [
+        "#665365",
+        "#415876"
+      ]
+    },
+    {
+      "id": "ORG-QUEEN",
+      "name": "Queen Bee",
+      "ja": "Queen Bee",
+      "kind": "animation_label",
+      "summary": "Adult-animation release label documented under Media Bank's publisher product pages.",
+      "start": null,
+      "end": "2026",
+      "history": "Its 2026 publisher list includes a March compilation of an earlier NTR-titled work. This is a release-label history, not proof of a particular physical animation production studio or that all its works share the theme.",
+      "source_ids": [
+        "S40"
+      ],
+      "color": [
+        "#855c52",
+        "#695378"
+      ]
+    },
+    {
+      "id": "ORG-VPANS",
+      "name": "V-Pan's Ecstasy",
+      "ja": "Vパン'sエクスタシー",
+      "kind": "source_circle",
+      "summary": "Original illustrated-work circle/publishing imprint credited on Kegareboshi and an earlier related artist adaptation.",
+      "start": null,
+      "end": "2026",
+      "history": "Publisher-confirmed source circle connection supplies an artist-led discovery route; historical works involving school-age framing are retained only in restricted academic bibliography.",
+      "source_ids": [
+        "S39",
+        "S30"
+      ],
+      "color": [
+        "#51687f",
+        "#75845d"
+      ]
+    },
+    {
+      "id": "ORG-DOLL",
+      "name": "DOLL PLAY",
+      "ja": "DOLL PLAY",
+      "kind": "source_circle",
+      "summary": "Original illustrated-work circle credited for Natsuzuma.",
+      "start": null,
+      "end": "2025",
+      "history": "Natsuzuma credits distinguish the artist Kurozu Gatari and the originating DOLL PLAY work from the Antekinussu animation release.",
+      "source_ids": [
+        "S36"
+      ],
+      "color": [
+        "#826047",
+        "#6e6879"
+      ]
+    },
+    {
+      "id": "ORG-TEAMBITTERS",
+      "name": "Rune TeamBitters",
+      "ja": "ルネTeamBitters",
+      "kind": "original_game_brand",
+      "summary": "Original PC-game brand for Soredemo Tsuma wo Aishiteru 2, distinct from the later OVA production entities.",
+      "start": null,
+      "end": "2026",
+      "history": "The 2026 OVA compilation credits the earlier TeamBitters game and a separate animated staff team, documenting a game-to-animation adaptation chain.",
+      "source_ids": [
+        "S38",
+        "S10"
+      ],
+      "color": [
+        "#526b61",
+        "#8a605c"
+      ]
+    },
+    {
+      "id": "ORG-ORCSOFT",
+      "name": "ORC SOFT",
+      "ja": "ORC SOFT",
+      "kind": "original_game_brand",
+      "summary": "Original game brand named in the published credits for Tsuma ga Kirei ni Natta Wake.",
+      "start": null,
+      "end": "2026",
+      "history": "The 2026 compilation identifies ORC SOFT as the original game brand while Antekinussu serves as the release label and T-REX as the credited animation production studio.",
+      "source_ids": [
+        "S37"
+      ],
+      "color": [
+        "#617b73",
+        "#62567a"
+      ]
+    },
+    {
+      "id": "ORG-WANI",
+      "name": "Wanimagazine",
+      "ja": "ワニマガジン社",
+      "kind": "manga_publisher",
+      "summary": "Commercial manga publisher credited for the original Yume Miru Otome, independently of animation production and the release label.",
+      "start": null,
+      "end": "2025",
+      "history": "The 2025 adaptation credits the commercial manga, not a doujinshi. Due to youth-associated promotional framing, the work is archival-context only, not featured in public discovery.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ],
+      "color": [
+        "#566a74",
+        "#7b6975"
+      ]
+    }
+  ],
+  "creators": [
+    {
+      "id": "CR-SATOU",
+      "name": "Satou Kuuki",
+      "ja": "左藤空気",
+      "kind": "original_artist",
+      "summary": "Original character/art creator credited on Kegareboshi and the earlier Netokano adaptation.",
+      "source_ids": [
+        "S39",
+        "S30"
+      ]
+    },
+    {
+      "id": "CR-KUROZU",
+      "name": "Kurozu Gatari",
+      "ja": "黒巣ガタリ",
+      "kind": "original_artist",
+      "summary": "Original artist behind Natsuzuma, published as a DOLL PLAY work.",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "id": "CR-RAIKA",
+      "name": "Raikaken",
+      "ja": "雷火剣",
+      "kind": "animation_director",
+      "summary": "Credited director across verified T-REX-produced NTR-label titles, including Kegareboshi, Natsuzuma and two earlier adult series.",
+      "source_ids": [
+        "S39",
+        "S36",
+        "S38",
+        "S37"
+      ]
+    },
+    {
+      "id": "CR-TOKKU",
+      "name": "Tokku03",
+      "ja": "特区03",
+      "kind": "screenwriter",
+      "summary": "Screenplay credit on Kegareboshi and Natsuzuma, among others; studio and author are distinct entities.",
+      "source_ids": [
+        "S39",
+        "S36",
+        "S30"
+      ]
+    },
+    {
+      "id": "CR-SAGARI",
+      "name": "Sagari Megane",
+      "ja": "サガリ眼鏡",
+      "kind": "storyboard_artist",
+      "summary": "Recurring credited storyboard artist on several Antekinussu/T-REX productions.",
+      "source_ids": [
+        "S39",
+        "S36",
+        "S38",
+        "S30"
+      ]
+    },
+    {
+      "id": "CR-AIJO",
+      "name": "Aijou Riku",
+      "ja": "愛上陸",
+      "kind": "original_artist",
+      "summary": "Original creator of the commercially published manga Yume Miru Otome, adapted into two 2025 OVAs. The publisher's school-age framing requires restricted bibliographic treatment.",
+      "source_ids": [
+        "S28",
+        "S29"
+      ]
+    },
+    {
+      "id": "CR-GENTLE",
+      "name": "Gentle Sasaki",
+      "ja": "ジェントル佐々木",
+      "kind": "character_designer",
+      "summary": "Original character design on the Soredemo Tsuma wo Aishiteru 2 game-to-animation adaptation.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "CR-SURUGA",
+      "name": "Suruga Kreutz",
+      "ja": "駿河クロイツ",
+      "kind": "character_designer",
+      "summary": "Credited original character design on Tsuma ga Kirei ni Natta Wake.",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "id": "CR-TSUJIMURA",
+      "name": "Tsujimura Umeko",
+      "ja": "辻村梅子",
+      "kind": "screenwriter",
+      "summary": "Credited screenplay on Soredemo Tsuma wo Aishiteru 2.",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "id": "CR-TATSUMI",
+      "name": "Tatsumi",
+      "ja": "辰美",
+      "kind": "screenwriter",
+      "summary": "Credited screenplay on Tsuma ga Kirei ni Natta Wake.",
+      "source_ids": [
+        "S37"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "work_id": "W-KGB",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "organization",
+      "entity_id": "ORG-VPANS",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "creator",
+      "entity_id": "CR-SATOU",
+      "role": "original_artist",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "creator",
+      "entity_id": "CR-TOKKU",
+      "role": "screenplay",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-KGB",
+      "entity_type": "creator",
+      "entity_id": "CR-SAGARI",
+      "role": "storyboard",
+      "source_ids": [
+        "S39"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "organization",
+      "entity_id": "ORG-DOLL",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "creator",
+      "entity_id": "CR-KUROZU",
+      "role": "original_artist",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "creator",
+      "entity_id": "CR-TOKKU",
+      "role": "screenplay",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-NS",
+      "entity_type": "creator",
+      "entity_id": "CR-SAGARI",
+      "role": "storyboard",
+      "source_ids": [
+        "S36"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "organization",
+      "entity_id": "ORG-TEAMBITTERS",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "creator",
+      "entity_id": "CR-SAGARI",
+      "role": "storyboard",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "creator",
+      "entity_id": "CR-TSUJIMURA",
+      "role": "screenplay",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-STA2",
+      "entity_type": "creator",
+      "entity_id": "CR-GENTLE",
+      "role": "original_character_design",
+      "source_ids": [
+        "S38"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "organization",
+      "entity_id": "ORG-ORCSOFT",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "creator",
+      "entity_id": "CR-TATSUMI",
+      "role": "screenplay",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-TK",
+      "entity_type": "creator",
+      "entity_id": "CR-SURUGA",
+      "role": "original_character_design",
+      "source_ids": [
+        "S37"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "organization",
+      "entity_id": "ORG-WANI",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "creator",
+      "entity_id": "CR-AIJO",
+      "role": "original_artist",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "creator",
+      "entity_id": "CR-TOKKU",
+      "role": "screenplay",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-YMO",
+      "entity_type": "creator",
+      "entity_id": "CR-SAGARI",
+      "role": "storyboard",
+      "source_ids": [
+        "S28"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "organization",
+      "entity_id": "ORG-TREX",
+      "role": "animation_production",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "organization",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "organization",
+      "entity_id": "ORG-VPANS",
+      "role": "original_material_brand_or_circle",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "creator",
+      "entity_id": "CR-SATOU",
+      "role": "original_artist",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "creator",
+      "entity_id": "CR-RAIKA",
+      "role": "director",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "creator",
+      "entity_id": "CR-TOKKU",
+      "role": "screenplay",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-NK",
+      "entity_type": "creator",
+      "entity_id": "CR-SAGARI",
+      "role": "storyboard",
+      "source_ids": [
+        "S30"
+      ]
+    },
+    {
+      "work_id": "W-QUEEN2",
+      "entity_type": "organization",
+      "entity_id": "ORG-QUEEN",
+      "role": "release_label",
+      "source_ids": [
+        "S31"
+      ]
+    },
+    {
+      "work_id": "W-QUEEN2",
+      "entity_type": "organization",
+      "entity_id": "ORG-MEDIABANK",
+      "role": "publisher_review_pending",
+      "source_ids": [
+        "S31"
+      ]
     }
   ]
 }
