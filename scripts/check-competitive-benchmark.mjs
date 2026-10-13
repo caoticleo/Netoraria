@@ -1,0 +1,25 @@
+import {readFileSync} from "node:fs";
+import assert from "node:assert/strict";
+const B=JSON.parse(readFileSync("data/competitive-benchmark-2026-10.json","utf8"));
+const C=JSON.parse(readFileSync("data/catalog.json","utf8"));
+const feature=readFileSync("src/discovery.js","utf8");
+const index=readFileSync("index.html","utf8");
+assert.equal(B.observed_at,"2026-10-13");
+assert.match(B.competitor.terms_url,/^https:\/\/ntrdb\.com\/terms/);
+assert.match(B.competitor.rights,/prohibit/i);
+assert.ok(B.capabilities.length>=20,"missing capability matrix");
+assert.equal(new Set(B.capabilities.map(f=>f.id)).size,B.capabilities.length,"duplicate feature ID");
+assert.ok(B.capabilities.every(f=>["P0","P1","P2"].includes(f.priority)&&f.source_url.startsWith("https://")),"benchmark lacks sourced actionable priority");
+const totals={Subgenre:35,Means:82,Content:414,Technical:140,Setting:298,Outcome:13};
+assert.equal(B.tag_framework.categories.reduce((sum,x)=>sum+x.total,0),982,"observed provider taxonomy aggregate mismatch");
+for(const [key,expected] of Object.entries(totals)){const candidate=B.tag_framework.categories.find(f=>f.name.toLowerCase()===key.toLowerCase()||key==="Subgenre"&&f.name==="Sub-genre");assert.equal(candidate?.total,expected)}
+const measures=new Map(B.public_metrics.map(x=>[x.id,x]));
+for(const [id,n] of [["works",20351],["characters",8000],["producers",5963],["tags",982],["lists",150],["proposals",13]])assert.equal(measures.get(id)?.value,n,"benchmark aggregate changed unexpectedly");
+assert.ok(B.success_metrics.some(x=>x.metric==="episode_provenance"),"source quality differentiation missing");
+assert.ok(C.taxonomy.facets.length>0,"local tag taxonomy is missing");
+assert.ok(feature.includes("excludedTags=new Set()"),"privacy-safe theme exclusion state missing");
+assert.ok(feature.includes("excludedTags.has(id)"),"theme exclusion does not affect discovery");
+assert.ok(feature.includes("reader-exclusions")&&feature.includes("reader-reset"),"theme preference controls missing");
+assert.ok(!/localStorage|sessionStorage|document\.cookie|fetch\(/.test(feature),"discovery feature should remain privacy-preserving and offline");
+assert.ok(!index.includes("ntrdb.com"),"do not market competitor links inside unrelated public app");
+console.log("Benchmark: public aggregates, 21 capability gaps, rights checks, client-only preferences validated");
