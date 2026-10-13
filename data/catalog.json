@@ -2662,9 +2662,7 @@
       "title": "Kyou wa Yubiwa o Hazusu kara…",
       "year": 2025,
       "media": "OVA (discovery candidate)",
-      "candidate_tag_ids": [
-        "infidelity"
-      ],
+      "candidate_tag_ids": [],
       "tag_basis": "tentative relationship/marital title; NOT NTR proof",
       "episode_hints": [
         "2025-07-25",
@@ -2679,7 +2677,7 @@
       "display_status": "internal-review",
       "age_context": "age-not-assessed",
       "artwork_status": "no licensed image; original typographic placeholder only",
-      "notes": "Publisher staff and original source needed before public display.",
+      "notes": "Publisher staff and original source needed before public display. No unverified infidelity tag is assigned.",
       "last_checked": "2026-10-13"
     },
     {
@@ -2687,9 +2685,7 @@
       "title": "Motokare to wa Dekinakatta Sex Shitemo Ii Desuka?",
       "year": 2025,
       "media": "OVA (discovery candidate)",
-      "candidate_tag_ids": [
-        "cheating"
-      ],
+      "candidate_tag_ids": [],
       "tag_basis": "speculative from title; NOT tagged NTR",
       "episode_hints": [
         "2025-06-27"
@@ -2703,7 +2699,7 @@
       "display_status": "internal-review",
       "age_context": "age-not-assessed",
       "artwork_status": "no licensed image; original typographic placeholder only",
-      "notes": "Ex-relationship language alone does not establish infidelity. Low-confidence breadth lead.",
+      "notes": "Ex-relationship language alone does not establish infidelity. Low-confidence breadth lead. No unverified infidelity tag is assigned.",
       "last_checked": "2026-10-13"
     },
     {
@@ -2839,9 +2835,7 @@
       "title": "Hitori Tsuma",
       "year": 2026,
       "media": "OVA (discovery candidate)",
-      "candidate_tag_ids": [
-        "infidelity"
-      ],
+      "candidate_tag_ids": [],
       "tag_basis": "wife theme, infidelity needs plot check",
       "episode_hints": [
         "2026-10-30 future"
@@ -2857,7 +2851,7 @@
       "display_status": "candidate-public",
       "age_context": "adult-spouse-context",
       "artwork_status": "no licensed image; original typographic placeholder only",
-      "notes": "Scheduled, not released; NTR classification not established.",
+      "notes": "Scheduled, not released; NTR classification not established. No unverified infidelity tag is assigned.",
       "last_checked": "2026-10-13"
     },
     {
