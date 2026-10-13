@@ -1,11 +1,12 @@
 {
   "meta": {
     "name": "Netoraria",
-    "version": "0.6.0-lineage",
+    "version": "0.7.0-2025-crosscheck",
     "as_of": "2026-10-13",
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
     "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
-    "research_focus": "Studio-first NTR animation encyclopedia with independently verified adult game connections and non-promotional publisher reissue metadata"
+    "research_focus": "Independent adult-animation calendar as lead; publisher/retailer bibliographic verification and source-medium/credit crosschecks",
+    "release_calendar_policy": "A generic adult-media index's listed date is an archival lead, not automatic evidence of the Japan-original publisher release, subtitle availability date or rights for imagery."
   },
   "sources": [
     {
@@ -223,6 +224,78 @@
       "url": "https://www.mediabank.co.jp/label.php?id=22&pg=1&stat=0",
       "title": "Media Bank Queen Bee catalog: March 2026 complete edition, not new episode",
       "evidence": "primary"
+    },
+    {
+      "id": "S49",
+      "url": "https://www.underhentai.net/releases/2025/",
+      "title": "UnderHentai 2025 month-by-month release discovery index; not verified publisher dates",
+      "evidence": "community"
+    },
+    {
+      "id": "S50",
+      "url": "https://ec.toranoana.jp/tora_r/ec/item/210006662452/",
+      "title": "2025-09-12 Queen Bee original title, first part, Japanese specialist retailer",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S51",
+      "url": "https://ec.toranoana.jp/tora_r/ec/item/210006663143/",
+      "title": "2025-10-10 Queen Bee original title, second part, Japanese specialist retailer",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S52",
+      "url": "https://www.books.or.jp/book-details/9784866538365",
+      "title": "Japanese bibliographic agency listing Gagarin Kichi's original manga volume, Core Magazine ISBN 9784866538365, 2024-12-25",
+      "evidence": "secondary"
+    },
+    {
+      "id": "S53",
+      "url": "https://www.suruga-ya.jp/product/detail/128086735",
+      "title": "Merry Jane first adult OVA episode 2025-04-04 MJAD-395, Japanese retailer",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S54",
+      "url": "https://www.suruga-ya.jp/kaitori/kaitori_detail/128086875",
+      "title": "Merry Jane second adult OVA episode 2025-06-06 MJAD-399, Japanese retailer",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S55",
+      "url": "https://bangumi.tv/subject/626937/relations",
+      "title": "Community media database credits original Aikawa Kaede novel issued by France Shoin; needs publisher corroboration",
+      "evidence": "community"
+    },
+    {
+      "id": "S56",
+      "url": "https://www.suruga-ya.jp/kaitori/kaitori_detail/128086782",
+      "title": "WHITE BEAR sequel episode of 2025 Kanochi family adaptation: credits PC game POISON and director Hideki Araki; mixed-age risk",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S57",
+      "url": "https://www.suruga-ya.jp/product/detail/185226006",
+      "title": "2023 source game package material: POISON game published March 31, 2023",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S58",
+      "url": "https://bangumi.tv/anime/tag/NTR/airtime/2025",
+      "title": "Community-tagged anime calendar; non-NTR mainstream shows included",
+      "evidence": "community"
+    },
+    {
+      "id": "S59",
+      "url": "https://bgm.tv/person/70541/works",
+      "title": "Community creator catalog traces Gagarin Kichi between 2025 and 2026 adult-animation adaptations",
+      "evidence": "community"
+    },
+    {
+      "id": "S60",
+      "url": "https://www.suruga-ya.jp/product/other/128086782",
+      "title": "Japanese secondary marketplace lists 2025 family-drama anime and WHITE BEAR release label",
+      "evidence": "retailer"
     }
   ],
   "works": [
@@ -595,6 +668,96 @@
         "#726450",
         "#3f5574"
       ]
+    },
+    {
+      "id": "W-BAKUNYU",
+      "title": "Netorareta Bakunyuu Tsuma-tachi",
+      "jp": "寝取られた爆乳妻たち",
+      "media": "OVA",
+      "label": "Queen Bee",
+      "year": 2025,
+      "genre": "NTR explicit in Japanese original title",
+      "source_ids": [
+        "S50",
+        "S51",
+        "S52"
+      ],
+      "original": {
+        "title": "Netorareta Bakunyuu Tsuma-tachi",
+        "media": "Commercial manga collection",
+        "creator": "Gagarin Kichi",
+        "publisher": "Core Magazine",
+        "source_ids": [
+          "S52"
+        ]
+      },
+      "characters": [],
+      "note": "Two original adult-anime releases, confirmed via specialist Japanese retailers for Sept 12 and Oct 10 2025. The original collected manga volume was published Dec 25 2024. The 2026 title with suffix 2 is tracked separately, not confused with the original.",
+      "visibility": "public",
+      "color": [
+        "#5b4f7c",
+        "#4d8190"
+      ]
+    },
+    {
+      "id": "W-AKOGARE",
+      "title": "Akogare no Onna Joushi ga, Aibeya Shucchou no Tonari no Bed de Zetsurin Otoko ni Netorarete Iru",
+      "jp": "憧れの女上司が、相部屋出張の隣のベッドで絶倫男に寝取られている",
+      "media": "OVA",
+      "label": "Merry Jane",
+      "year": 2025,
+      "genre": "NTR explicit in Japanese original title; office-based adult storyline",
+      "source_ids": [
+        "S53",
+        "S54",
+        "S55"
+      ],
+      "original": {
+        "title": "Akogare no Onna Joushi ga, Aibeya Shucchou no Tonari no Bed de Zetsurin Otoko ni Netorarete Iru",
+        "media": "Novel",
+        "creator": "Aikawa Kaede (community-credit; publisher confirmation pending)",
+        "publisher": "France Shoin (community-credit)",
+        "source_ids": [
+          "S55"
+        ]
+      },
+      "characters": [],
+      "note": "Two retail-confirmed adult OVA editions, April 4 and June 6 2025, from Merry Jane label. Japanese retail copy describes adult publishing-office coworkers. The original novel/author is community-catalog-backed and needs first-party verification.",
+      "visibility": "public",
+      "color": [
+        "#396475",
+        "#816478"
+      ]
+    },
+    {
+      "id": "W-KANOCHI",
+      "title": "Kanochi x Netorare Kazoku The Animation",
+      "jp": "完堕ちX寝取られ家族 The Animation",
+      "media": "OVA",
+      "label": "WHITE BEAR",
+      "year": 2025,
+      "genre": "NTR explicit in title; family narrative",
+      "source_ids": [
+        "S56",
+        "S57"
+      ],
+      "original": {
+        "title": "Kanochi x Netorare Kazoku",
+        "media": "PC game",
+        "creator": "POISON; original artwork credited to Minamoto in DVD notes",
+        "publisher": "POISON",
+        "source_ids": [
+          "S56",
+          "S57"
+        ]
+      },
+      "characters": [],
+      "note": "Two-part 2025 animation of a 2023 POISON PC game. A family-based narrative has unresolved age details for the characters; this remains strictly neutral bibliographic research, not public browsing discovery. Second episode was May 30 2025; first was March 21 according to a third-party archive, pending independent retailer verification.",
+      "visibility": "restricted-context",
+      "color": [
+        "#55556c",
+        "#766074"
+      ]
     }
   ],
   "releases": [
@@ -896,6 +1059,58 @@
       ],
       "status": "listed",
       "confidence": "publisher"
+    },
+    {
+      "id": "R25-QUEEN-01",
+      "work_id": "W-BAKUNYU",
+      "date": "2025-09-12",
+      "title": "Netorareta Bakunyuu Tsuma-tachi — first part",
+      "type": "original_ova",
+      "sku": null,
+      "source_ids": [
+        "S50"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
+    },
+    {
+      "id": "R25-QUEEN-02",
+      "work_id": "W-BAKUNYU",
+      "date": "2025-10-10",
+      "title": "Netorareta Bakunyuu Tsuma-tachi — second part",
+      "type": "original_ova",
+      "sku": null,
+      "source_ids": [
+        "S51"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
+    },
+    {
+      "id": "R25-MJ-01",
+      "work_id": "W-AKOGARE",
+      "date": "2025-04-04",
+      "title": "Akogare no Onna Joushi — episode 1",
+      "type": "original_ova",
+      "sku": "MJAD-395",
+      "source_ids": [
+        "S53"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
+    },
+    {
+      "id": "R25-MJ-02",
+      "work_id": "W-AKOGARE",
+      "date": "2025-06-06",
+      "title": "Akogare no Onna Joushi — episode 2",
+      "type": "original_ova",
+      "sku": "MJAD-399",
+      "source_ids": [
+        "S54"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
     }
   ],
   "chronology": [
@@ -1054,6 +1269,36 @@
       "date": "2026-01-30",
       "title": "Media Bank GOLD BEAR DVD and Blu-ray complete-edition reissues (not new animation).",
       "source_id": "S46"
+    },
+    {
+      "id": "T27",
+      "date": "2024-12-25",
+      "title": "Commercial manga source collection Netorareta Bakunyuu Tsuma-tachi published by Core Magazine (ISBN verified).",
+      "source_id": "S52"
+    },
+    {
+      "id": "T28",
+      "date": "2025-04-04",
+      "title": "Merry Jane publishes first episode of Akogare no Onna Joushi (retailer SKU verified).",
+      "source_id": "S53"
+    },
+    {
+      "id": "T29",
+      "date": "2025-06-06",
+      "title": "Merry Jane second episode of Akogare no Onna Joushi (retailer SKU verified).",
+      "source_id": "S54"
+    },
+    {
+      "id": "T30",
+      "date": "2025-09-12",
+      "title": "Queen Bee's first Netorareta Bakunyuu Tsuma-tachi OVA released (retailer listing).",
+      "source_id": "S50"
+    },
+    {
+      "id": "T31",
+      "date": "2025-10-10",
+      "title": "Queen Bee's second Netorareta Bakunyuu Tsuma-tachi OVA released (retailer listing).",
+      "source_id": "S51"
     }
   ],
   "review_queue": [
@@ -1308,6 +1553,24 @@
         "#736042",
         "#444e76"
       ]
+    },
+    {
+      "id": "ORG-MERRY",
+      "name": "Merry Jane",
+      "ja": "メリー・ジェーン",
+      "kind": "animation_label",
+      "summary": "Adult-animation distributor/release label named on the retail-confirmed 2025 two-episode Akogare no Onna Joushi release; animation production company not yet corroborated.",
+      "start": null,
+      "end": "2025",
+      "history": "Two verified 2025 original releases carry retailer SKUs MJAD-395 and MJAD-399. The production studio and the label's founding year remain unverified.",
+      "source_ids": [
+        "S53",
+        "S54"
+      ],
+      "color": [
+        "#345b71",
+        "#895c83"
+      ]
     }
   ],
   "creators": [
@@ -1442,6 +1705,19 @@
       "source_ids": [
         "S45",
         "S47"
+      ]
+    },
+    {
+      "id": "CR-GAGARIN",
+      "name": "Gagarin Kichi",
+      "ja": "ガガーリン吉",
+      "kind": "original_artist",
+      "summary": "Author of the 2024 commercially issued manga Netorareta Bakunyuu Tsuma-tachi, adapted as a two-part 2025 Queen Bee animation. Credits for the distinct 2026 '2' installment are supported by Japanese retail metadata.",
+      "source_ids": [
+        "S52",
+        "S50",
+        "S51",
+        "S59"
       ]
     }
   ],
@@ -1886,6 +2162,56 @@
       "source_ids": [
         "S46"
       ]
+    },
+    {
+      "work_id": "W-BAKUNYU",
+      "entity_type": "organization",
+      "entity_id": "ORG-QUEEN",
+      "role": "release_label",
+      "source_ids": [
+        "S50",
+        "S51"
+      ]
+    },
+    {
+      "work_id": "W-BAKUNYU",
+      "entity_type": "creator",
+      "entity_id": "CR-GAGARIN",
+      "role": "original_artist",
+      "source_ids": [
+        "S50",
+        "S51",
+        "S52"
+      ]
+    },
+    {
+      "work_id": "W-AKOGARE",
+      "entity_type": "organization",
+      "entity_id": "ORG-MERRY",
+      "role": "release_label",
+      "source_ids": [
+        "S53",
+        "S54"
+      ]
+    },
+    {
+      "work_id": "W-QUEEN2",
+      "entity_type": "creator",
+      "entity_id": "CR-GAGARIN",
+      "role": "original_artist",
+      "source_ids": [
+        "S31",
+        "S59"
+      ]
+    },
+    {
+      "work_id": "W-KANOCHI",
+      "entity_type": "creator",
+      "entity_id": "CR-MINAMOTO",
+      "role": "original_artist",
+      "source_ids": [
+        "S56"
+      ]
     }
   ],
   "relations": [
@@ -1900,6 +2226,89 @@
         "S47"
       ],
       "note": "Distinct original works sharing artist Minamoto; game is not adaptation of the 2023 animation."
+    }
+  ],
+  "franchise_links": [
+    {
+      "id": "F-QUEEN",
+      "from_work_id": "W-BAKUNYU",
+      "to_work_id": "W-QUEEN2",
+      "type": "sequel",
+      "basis": "title and series numbering; separate original productions",
+      "source_ids": [
+        "S50",
+        "S31"
+      ]
+    }
+  ],
+  "research_leads": [
+    {
+      "id": "L-KANOCHI",
+      "title": "Kanochi x Netorare Kazoku",
+      "reason": "2025 two-part adaptation of POISON PC game; family-character age evidence unresolved, retain archival-only non-graphic record.",
+      "source_ids": [
+        "S49",
+        "S56",
+        "S57"
+      ],
+      "state": "age-review"
+    },
+    {
+      "id": "L-RING",
+      "title": "Kyou wa Yubiwa o Hazusu kara……",
+      "reason": "UnderHentai July and December two-part chronology; establish original creator/publisher, character ages, studio and NTR relationship from a manufacturer page.",
+      "source_ids": [
+        "S49",
+        "S58"
+      ],
+      "state": "verify"
+    },
+    {
+      "id": "L-WHITESTUDIO",
+      "title": "WHITE BEAR versus animation contractor for Kanochi",
+      "reason": "WHITE BEAR is the retail release label. Independent production studio not confirmed from the located primary-level retail metadata.",
+      "source_ids": [
+        "S56"
+      ],
+      "state": "verify"
+    },
+    {
+      "id": "L-BLUEBREAD",
+      "title": "Blue Bread production on Netorareta Bakunyuu Tsuma-tachi",
+      "reason": "Community production credit appears in secondary fan indexes but still lacks a direct primary studio or publisher confirmation.",
+      "source_ids": [
+        "S59"
+      ],
+      "state": "verify"
+    },
+    {
+      "id": "L-FUUKI",
+      "title": "Fuuki Iin to Fuuzoku Katsudou",
+      "reason": "2025 episode list shows a 2-part series but title/underage framing requires age review before public inclusion.",
+      "source_ids": [
+        "S49"
+      ],
+      "state": "age-review"
+    },
+    {
+      "id": "L-KGB",
+      "title": "UnderHentai Kegareboshi episode 01/02 vs publisher Blue/Red titles",
+      "reason": "Reconcile localized episode ordinal labels with separate Japanese product colors; avoid importing duplicated episode identities.",
+      "source_ids": [
+        "S49",
+        "S14"
+      ],
+      "state": "alias-review"
+    },
+    {
+      "id": "L-NATSU",
+      "title": "UnderHentai Natsu Zuma vs publisher Natsuzuma",
+      "reason": "These are likely transliteration aliases of one two-episode series, not two works. Preserve alias mapping with source rather than a duplicate work.",
+      "source_ids": [
+        "S49",
+        "S13"
+      ],
+      "state": "alias-review"
     }
   ]
 }
