@@ -30,6 +30,14 @@ This branch adds **Studio / Label** and **Creator / Artist** mobile-friendly dir
 - Current data: **12 works**, **23 release/edition/game entries**, **11 organizations**, **12 creators**, **49 work-credit links**, **36 sources**, **26 history nodes** and **1 directly sourced cross-media relationship**. These are research-sample counts, not global industry totals.
 - All versions preserve the non-graphic, cover-licensed-only policy. See `docs/LINEAGE_AND_2026_v06.md`.
 
+## v0.7 research pass — 2025 calendar cross-check
+
+Using the [UnderHentai 2025 release calendar](https://www.underhentai.net/releases/2025/) **only for discovery leads**, a manually verified research pass adds two 2025 animation work records and four original episodes, plus one sensitive context-only source-game adaptation record. Critical details are checked against Japanese **Media Bank**, **Suruga-ya**, **Toranoana**, and the national book bibliography. The 2025 Queen Bee work has first-party product SKUs QNB-M163 / QNB-M165; the Merry Jane two-part title has retailer-backed codes MJAD-395 / MJAD-399. Production studios, adaptation credits and character ages are not inferred without verification. The Gagarin Kichi original manga volume has a separately sourced publisher, date and ISBN.
+
+Research adds aliases for `Natsu Zuma` → `Natsuzuma` while holding UnderHentai's `Kegareboshi` episode ordinals for reconciliation with publisher `Blue/Red` titles. The age-ambiguous POISON-family adaptation remains **restricted bibliographic context**, never promoted as an adult-animation recommendation. No copyrighted images, video embeds, unauthorized scraped dataset, or external streaming links are copied.
+
+See **[2025 source audit](docs/UNDERHENTAI_2025_RESEARCH_v07.md)** for verified/manufacturer-vs-retailer provenance, candidate triage, content policy and research backlog. Catalog now has **15 works (including restricted/context-only)**, **27 release/edition/game records**, **12 organizations**, **13 creators**, **55 credit links**, **49 documented sources** and **31 historical anchors**. Not all work records represent animation, and only approved adult-oriented animation appears in the public directory.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
