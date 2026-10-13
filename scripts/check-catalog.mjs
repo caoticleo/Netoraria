@@ -111,7 +111,7 @@ for(const o of C.source_observations){
  assert.ok(sources.has(o.source_id),"orphan source inventory "+o.id);
  assert.ok(o.observed_items>0&&Number.isInteger(o.observed_items),"source window must be nonzero observed count");
  assert.equal(o.complete,false,"cannot mark sampled external catalog window complete");
- assert.match(o.as_of,/^\\d{4}-\\d{2}-\\d{2}$/,"observation date");
+ assert.match(o.as_of,/^\d{4}-\d{2}-\d{2}$/,"observation date");
  if(o.full_catalog_total_displayed!=null)assert.ok(o.full_catalog_total_displayed>=o.observed_items,"source catalog denominator suspicious");
 }
 const v2019=works.get("W-YUE");assert.ok(v2019&&v2019.visibility==="public"&&v2019.year===2019,"missing 2019 public wiki series");
