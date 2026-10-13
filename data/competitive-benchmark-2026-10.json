@@ -1,0 +1,318 @@
+{
+  "name": "Netoraria competitive capability benchmark",
+  "version": "0.10.0",
+  "observed_at": "2026-10-13",
+  "competitor": {
+    "name": "NTRDB",
+    "site": "https://ntrdb.com",
+    "operator": "Hangover Cat Purrroduction",
+    "terms_url": "https://ntrdb.com/terms",
+    "rights": "Explicit prohibition on scraping, mirroring, or systematically copying the database without permission. No bulk work records, user content, covers, ratings, or 982-tag taxonomy imported."
+  },
+  "public_metrics": [
+    {
+      "id": "works",
+      "label": "all-format works",
+      "value": 20351,
+      "source_url": "https://ntrdb.com/works",
+      "interpretation": "All formats, not a distinct count of adult animation or confirmed NTR-themed originals."
+    },
+    {
+      "id": "characters",
+      "label": "characters",
+      "value": 8000,
+      "source_url": "https://ntrdb.com/characters",
+      "interpretation": "Displayed count, unique identity quality not independently assessed."
+    },
+    {
+      "id": "producers",
+      "label": "developers, studios and circles",
+      "value": 5963,
+      "source_url": "https://ntrdb.com/producers",
+      "interpretation": "Provider's total across all media, not animation production contractors only."
+    },
+    {
+      "id": "tags",
+      "label": "work tags",
+      "value": 982,
+      "source_url": "https://ntrdb.com/tags",
+      "interpretation": "Six provider categories, no imported proprietary term list."
+    },
+    {
+      "id": "lists",
+      "label": "community lists",
+      "value": 150,
+      "source_url": "https://ntrdb.com/lists",
+      "interpretation": "Provider-displayed count of public user-created lists."
+    },
+    {
+      "id": "proposals",
+      "label": "community proposals",
+      "value": 13,
+      "source_url": "https://ntrdb.com/proposals",
+      "interpretation": "Snapshot of public proposals."
+    },
+    {
+      "id": "monthly_calendar",
+      "label": "October 2026 calendar entries",
+      "value": 211,
+      "source_url": "https://ntrdb.com/calendar",
+      "interpretation": "Mixed formats and release/update types, including upcoming; NOT original anime episodes."
+    },
+    {
+      "id": "sale_results",
+      "label": "works with store sale listings",
+      "value": 2669,
+      "source_url": "https://ntrdb.com/on-sale",
+      "interpretation": "Marketplace-affiliate results, dynamic and not the total catalog."
+    }
+  ],
+  "tag_framework": {
+    "categories": [
+      {
+        "name": "Sub-genre",
+        "total": 35
+      },
+      {
+        "name": "Means",
+        "total": 82
+      },
+      {
+        "name": "Content",
+        "total": 414
+      },
+      {
+        "name": "Technical",
+        "total": 140
+      },
+      {
+        "name": "Setting",
+        "total": 298
+      },
+      {
+        "name": "Outcome",
+        "total": 13
+      }
+    ],
+    "source_url": "https://ntrdb.com/tags",
+    "interpretation": "Research only: model distinct semantic axes, do not bulk copy lists or imply 982 tags individually verified."
+  },
+  "capabilities": [
+    {
+      "id": "multi_media_search",
+      "label": "Multi-medium searchable index",
+      "provider": "observed",
+      "netoraria": "partial",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/works",
+      "next": "Increase independent canonical animated works; permit original-medium cards and cross-media edges."
+    },
+    {
+      "id": "animated_first",
+      "label": "Animation-first series/episode model",
+      "provider": "mixed-format work records",
+      "netoraria": "prototype with separate releases",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Full per-episode pages, staff, broadcast vs packaging and cross-edition lineage."
+    },
+    {
+      "id": "studio_people",
+      "label": "Character, producer and staff directory",
+      "provider": "observed",
+      "netoraria": "partial",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/producers",
+      "next": "Normalize role-specific producer, label, circle, director, artist and character edges."
+    },
+    {
+      "id": "search_filters",
+      "label": "Advanced format, year, language, quality, subgenre, status filters",
+      "provider": "observed",
+      "netoraria": "partial",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/works",
+      "next": "Add full faceted filter and saved shareable URL state with zero required accounts."
+    },
+    {
+      "id": "tag_axes",
+      "label": "Multi-category semantic tags",
+      "provider": "observed",
+      "netoraria": "12 starter facets",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/tags",
+      "next": "Expand curated owned vocabulary by distinct narrative, consent, perspective, content-note, tone, setting and technical axes."
+    },
+    {
+      "id": "tag_blacklist",
+      "label": "Reader blacklist of undesirable themes",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/announcements",
+      "next": "Implement session-only, client-side opt-out filters initially; persist only with consent."
+    },
+    {
+      "id": "spoiler_controls",
+      "label": "Spoiler-aware screenshots, hidden identities and tags",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Design spoiler-tiered facts with clear reveal controls before user accounts."
+    },
+    {
+      "id": "release_calendar",
+      "label": "Multi-format release calendar with updates and future",
+      "provider": "observed",
+      "netoraria": "episode/edition chronology prototype",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/calendar",
+      "next": "A date-based mobile view with primary-vs-community evidence and updated/scheduled badges."
+    },
+    {
+      "id": "ratings",
+      "label": "Community ratings, weighted score, NTR intensity",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Define clear orthogonal metrics, confidence and anti-brigading controls, privacy and moderation."
+    },
+    {
+      "id": "recommendations",
+      "label": "Personal recommendations and linked similar works",
+      "provider": "observed",
+      "netoraria": "only source-graph links",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Deterministic non-erotic relationship/credit matching first; avoid unsafe age-themed discovery."
+    },
+    {
+      "id": "lists",
+      "label": "Community list, ranked, tier, grid views",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/lists",
+      "next": "Private local lists first; moderation and authentication before public lists."
+    },
+    {
+      "id": "creator_claims",
+      "label": "Producer accounts and claimed records",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P2",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Require identity verification, edit history and explicit dispute rights."
+    },
+    {
+      "id": "public_proposals",
+      "label": "User suggestions with vote, status and moderator reasoning",
+      "provider": "observed",
+      "netoraria": "GitHub issues only",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/proposals",
+      "next": "Publish governed contributor workflow after user accounts and moderation are ready."
+    },
+    {
+      "id": "contribution_gamification",
+      "label": "Achievements, coins, levels, cosmetic shop, mascot",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P2",
+      "source_url": "https://ntrdb.com/announcements",
+      "next": "Reward evidence-backed edit quality, corrections and source confirmations instead of indiscriminate uploads."
+    },
+    {
+      "id": "locales",
+      "label": "Multilingual titles and localized UI",
+      "provider": "observed",
+      "netoraria": "mostly English + Japanese title",
+      "priority": "P1",
+      "source_url": "https://ntrdb.com/announcements",
+      "next": "PT-BR / EN / Japanese title aliases first, no automatic translation of unverified facts."
+    },
+    {
+      "id": "commerce",
+      "label": "Official stores, creator links, sale aggregation",
+      "provider": "observed",
+      "netoraria": "publisher citations only",
+      "priority": "P2",
+      "source_url": "https://ntrdb.com/on-sale",
+      "next": "Official legal storefront links only; no pirate mirrors, compliance and labeling of affiliate relationships."
+    },
+    {
+      "id": "feed",
+      "label": "Developer updates and subscriptions",
+      "provider": "observed",
+      "netoraria": "missing",
+      "priority": "P2",
+      "source_url": "https://ntrdb.com/feed",
+      "next": "Publisher announcement change log and optional RSS without requiring social profiles."
+    },
+    {
+      "id": "auditability",
+      "label": "Citation, certainty, corrected provenance at field level",
+      "provider": "work has some external links, full field audit not established",
+      "netoraria": "source-ledger prototype",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Make per-field source chips and visible correction history the core differentiation."
+    },
+    {
+      "id": "low_resource_mobile",
+      "label": "Performant, responsive app-like interface",
+      "provider": "reported slow by one journalist; no benchmark measurements",
+      "netoraria": "responsive prototype, not browser-tested",
+      "priority": "P0",
+      "source_url": "https://vocesabianime.com/en/ntr-database-netorare-anime-games/",
+      "next": "Set objective web-vitals budgets and conduct real-device QA; don't claim competitor universally slow."
+    },
+    {
+      "id": "identity_resolution",
+      "label": "Title aliases, original episode vs reissue vs formats",
+      "provider": "various alternate titles/editions, detailed validation not established",
+      "netoraria": "separate release and source IDs",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/works/himawari-wa-yoru-ni-saku-2",
+      "next": "Identity graph and manufacturer SKU-based merging/alias confidence."
+    },
+    {
+      "id": "moderation_rights",
+      "label": "Pre-publication content moderation, DMCA, 18+ policy",
+      "provider": "observed published policy",
+      "netoraria": "policy-only prototype",
+      "priority": "P0",
+      "source_url": "https://ntrdb.com/content-policy",
+      "next": "Review hosting rules, age assurance, takedowns and licensed-art ledger before public deployment."
+    }
+  ],
+  "success_metrics": [
+    {
+      "metric": "unique_verified_animated_series",
+      "definition": "Distinct canonical animated works with at least one release and source-backed identity; never include new physical formats twice.",
+      "current": "not defensibly benchmarkable against NTRDB's 20,351 mixed-medium count"
+    },
+    {
+      "metric": "candidate_recall_by_allowed_source",
+      "definition": "Unique candidate IDs captured / eligible titles in an authorized fully enumerated source universe.",
+      "current": "unknown unless source denominator legally accessible"
+    },
+    {
+      "metric": "episode_provenance",
+      "definition": "Percent of public original episodes having dated primary manufacturer product IDs or documented retailer sources.",
+      "current": "baseline measurement pending"
+    },
+    {
+      "metric": "wiki_mobile_performance",
+      "definition": "Measured p75 LCP/INP/CLS on real target phones with non-graphic assets.",
+      "current": "not measured"
+    },
+    {
+      "metric": "consumer_trust",
+      "definition": "Explicitly communicated uncertainty, source conflicts and visible correction history for major attributes.",
+      "current": "prototype only"
+    }
+  ]
+}
