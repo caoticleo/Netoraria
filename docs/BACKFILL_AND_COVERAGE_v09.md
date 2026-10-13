@@ -58,7 +58,7 @@ Media Bank currently shows 210 items across its full Queen Bee label listings; t
 
 ## Outcome and explicit limits
 
-Canonical dataset after v0.9: **16 works total** (includes context-only and restricted), **29 release/game/edition records**, **13 organizations**, **14 creators**, **65 source entries**, **27 discovery lead records**, **4 source-window observation records**, and historical chronology extended through 2019.
+Canonical dataset after v0.9: **16 works total** (includes context-only and restricted), **29 release/game/edition records**, **13 organizations**, **14 creators**, **62 source entries**, **27 discovery lead records**, **4 source-window observation records**, and historical chronology extended through 2019.
 
 The 27 discovery leads are **not 27 additional NTR series**; some represent existing works, aliases, reissues, or unverified genres. The meaningful canonical breadth increment is **one older animated NTR series and two original 2019 episodes**, plus a manufacturer-grade 2026 record correction.
 
