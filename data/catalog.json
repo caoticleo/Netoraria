@@ -371,24 +371,6 @@
       "evidence": "primary"
     },
     {
-      "id": "S73",
-      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=1&stat=0",
-      "title": "Media Bank Queen Bee manufacturer catalog page 2: March 2026 NTR-themed Sakuramiya complete reissue and other works",
-      "evidence": "primary"
-    },
-    {
-      "id": "S74",
-      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=2&stat=0",
-      "title": "Media Bank Queen Bee manufacturer catalog page 3: October 2025 NTR original episodes and November spouse-title reissues",
-      "evidence": "primary"
-    },
-    {
-      "id": "S75",
-      "url": "https://www.lune-soft.jp/ova/type_ova/%E5%AF%9D%E5%8F%96%E3%82%8A%E3%83%BB%E5%AF%9D%E5%8F%96%E3%82%89%E3%82%8C%EF%BC%88ntr%EF%BC%89",
-      "title": "Rune/Lune first-party NTR keyword anime list (visible 2025/26 window), includes originals and compilation reissues",
-      "evidence": "primary"
-    },
-    {
       "id": "S76",
       "url": "https://www.suruga-ya.jp/kaitori/kaitori_detail/128073828",
       "title": "Sakuramiya Shimai no Netorare Kiroku episode 2 2019-09-27 Queen Bee QNB-M065; age context not cleared",
@@ -2596,7 +2578,7 @@
       "reason": "Normalize a single series identity and verify character ages before any public fan discovery. The first original 2019 date unverified.",
       "source_ids": [
         "S76",
-        "S73"
+        "S40"
       ],
       "state": "age-review"
     }
@@ -3259,7 +3241,7 @@
       ],
       "source_ids": [
         "S76",
-        "S73"
+        "S40"
       ],
       "matched_work_id": null,
       "stage": "discovered",
@@ -3282,7 +3264,7 @@
         "2025-11-07 two complete-volume editions QNB-M169/170"
       ],
       "source_ids": [
-        "S74",
+        "S61",
         "S77"
       ],
       "matched_work_id": null,
@@ -3307,7 +3289,7 @@
         "2025-12-26 NTR-category compilation"
       ],
       "source_ids": [
-        "S75"
+        "S02"
       ],
       "matched_work_id": null,
       "stage": "discovered",
@@ -3331,7 +3313,7 @@
         "2025-11-28 publisher category compilation"
       ],
       "source_ids": [
-        "S75"
+        "S02"
       ],
       "matched_work_id": null,
       "stage": "discovered",
@@ -3355,7 +3337,7 @@
         "2026-02-27 publisher category compilation"
       ],
       "source_ids": [
-        "S75"
+        "S02"
       ],
       "matched_work_id": null,
       "stage": "discovered",
@@ -3379,7 +3361,7 @@
         "2026-03-06 QNB-M178 compilation"
       ],
       "source_ids": [
-        "S73",
+        "S40",
         "S76"
       ],
       "matched_work_id": null,
@@ -3404,7 +3386,7 @@
         "2025-11-07 QNB-M170"
       ],
       "source_ids": [
-        "S74",
+        "S61",
         "S77"
       ],
       "matched_work_id": null,
@@ -3473,7 +3455,7 @@
     },
     {
       "id": "OBS-MB22-P2",
-      "source_id": "S73",
+      "source_id": "S40",
       "source_scope": "Media Bank Queen Bee second page window",
       "as_of": "2026-10-13",
       "observed_items": 10,
@@ -3483,7 +3465,7 @@
     },
     {
       "id": "OBS-MB22-P3",
-      "source_id": "S74",
+      "source_id": "S61",
       "source_scope": "Media Bank Queen Bee third page window",
       "as_of": "2026-10-13",
       "observed_items": 10,
@@ -3493,7 +3475,7 @@
     },
     {
       "id": "OBS-LUNE-NTR",
-      "source_id": "S75",
+      "source_id": "S02",
       "source_scope": "Rune/Lune NTR keyword-filtered adult anime 2025–26 visible window",
       "as_of": "2026-10-13",
       "observed_items": 12,
