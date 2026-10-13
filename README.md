@@ -51,6 +51,17 @@ A new mobile-friendly **Discovery Frontier** lets readers filter source-led cand
 
 Read [completion-first methodology](docs/COMPLETION_FIRST_v08.md) before interpreting counts or importing further candidate feeds.
 
+## v0.9 draft — 2019 backfill & observed-source coverage
+
+- New 2019 Queen Bee adult-marriage NTR animation series **Yue ni Hitozuma wa Netorareta.**, with its two retailer-backed original episodes (QNB-M058 / QNB-M061), plus Arakure's earlier 2018 Core Magazine manga connection.
+- An existing 2026 original OVA sequel entry now has its manufacturer-confirmed original episode identity and SKU **QNB-M190** (Sept 18, 2026).
+- **27 stage-classified discovery leads**, including duplicate-candidate references that do not count as new series. Added publisher-tagged compilation leads to internal/contextual queues until genre and age context are verified.
+- **Dynamic Discovery year filter** now supports 2019 alongside 2025–2026. New mobile-responsive **Coverage** screen records which publisher pages were inspected, including the misleading distinction between a 210-product label-wide catalog and a much smaller NTR subset.
+- Verified counts now include **16 total work records, 29 release records, 13 organizations, 14 creators, and 65 source references**. These are sampled bibliographic data, not claims of worldwide genre completeness.
+- CI expands to cover SKU uniqueness, original-versus-edition semantics, alias link integrity and source-window observation dates.
+
+See [v0.9 research and source-window report](docs/BACKFILL_AND_COVERAGE_v09.md). Commercial publisher imagery remains unlicensed and is not mirrored; age-sensitive entries are neutral internal research only.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
