@@ -18,6 +18,10 @@ The catalog in `data/catalog.json` contains 10 work-level records, 20 release/ed
 
 Open `index.html` for mobile-first cover-led search. Wiki detail tabs show release chronology, verified and unverified character biography fields, original manga/game/doujin relationships and producer/retailer citations. All covers are designed typographic placeholders; commercial artwork needs appropriate rights review. Read `docs/RESEARCH_TAGGED_2026.md` for source accuracy and release distinctions.
 
+## v0.5 draft — production network
+
+This branch adds **Studio / Label** and **Creator / Artist** mobile-friendly directories, linked detail pages, dated credited releases, small relationship graphs and source citations. They distinguish the animation studio from the distributor label, source-game developer, original comic circle, and individual artists. URLs like `#/studio/ORG-TREX` and `#/artist/CR-SATOU` open the corresponding wiki profiles. Series overviews link back to verified creative participants. The current research snapshot has 10 organization profiles, 11 creator profiles, and 44 attributed work-level role edges, with age-sensitive titles hidden from public promotional discovery. See `docs/STUDIOS_AND_CREATORS_v05.md` for detailed evidence and limitations.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
