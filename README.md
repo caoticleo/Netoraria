@@ -12,6 +12,12 @@ Open `index.html` in a browser (no build required). Current sample covers three 
 
 Use first-party publishers for dates, credits and editions; cross-check third-party hentai databases for leads, not unrestricted duplication. Keep original works, OVAs, reissues, characters, source adaptations and rights metadata distinct. **Never assume every animated hentai is based on a doujinshi**.
 
+## Current research catalog (v0.4 draft)
+
+The catalog in `data/catalog.json` contains 10 work-level records, 20 release/edition metadata records, 23 source-ledger entries and 24 historical milestones. The app uses the generated offline snapshot at `src/catalog.js`, validated against the canonical JSON in CI. Six display-eligible NTR-themed animated series groups are presently browsable; game-only and age-sensitive historical records are held as context rather than fan recommendations.
+
+Open `index.html` for mobile-first cover-led search. Wiki detail tabs show release chronology, verified and unverified character biography fields, original manga/game/doujin relationships and producer/retailer citations. All covers are designed typographic placeholders; commercial artwork needs appropriate rights review. Read `docs/RESEARCH_TAGGED_2026.md` for source accuracy and release distinctions.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
