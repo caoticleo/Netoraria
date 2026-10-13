@@ -187,6 +187,18 @@
       "title": "Antekinussu label complete public catalog",
       "url": "https://www.lune-soft.jp/ova/brand_ova/antechinus",
       "evidence": "primary"
+    },
+    {
+      "id": "S43",
+      "title": "2023 publisher launch notice: Minamoto original comic and Antekinussu OVAs",
+      "url": "https://www.lune-soft.jp/news/26424",
+      "evidence": "primary"
+    },
+    {
+      "id": "S44",
+      "title": "Third-party T-REX credit lead for Tsuma ni Damatte (needs primary confirmation)",
+      "url": "https://www.animecharactersdatabase.com/source.php?id=107126",
+      "evidence": "community"
     }
   ],
   "works": [
@@ -303,12 +315,16 @@
       "year": 2023,
       "genre": "label-associated / editorial-review",
       "source_ids": [
-        "S12"
+        "S12",
+        "S43"
       ],
       "original": {
-        "title": "Under verification",
-        "media": "Undetermined",
-        "source_ids": []
+        "title": "Tsuma ni Damatte Sokubaikai ni Iku n Janakatta",
+        "media": "Independent illustrated comic",
+        "creator": "Minamoto",
+        "source_ids": [
+          "S43"
+        ]
       },
       "characters": [],
       "note": "2023 release announcement for a pair of numbered original OVAs.",
@@ -924,6 +940,15 @@
       "title": "Commercial jacket/cover artwork",
       "reason": "Do not hotlink or reproduce publisher assets without documented rights and appropriate age review.",
       "source_ids": []
+    },
+    {
+      "id": "Q-TS-STUDIO",
+      "title": "T-REX credited on 2023 Tsuma ni Damatte",
+      "reason": "Third-party catalog supplies the T-REX attribution; seek first-party episode credits before adding to verified animation-production edges.",
+      "source_ids": [
+        "S43",
+        "S44"
+      ]
     }
   ],
   "organizations": [
@@ -961,7 +986,8 @@
         "S03",
         "S42",
         "S39",
-        "S36"
+        "S36",
+        "S43"
       ],
       "color": [
         "#6f437a",
@@ -1219,6 +1245,16 @@
       "summary": "Credited screenplay on Tsuma ga Kirei ni Natta Wake.",
       "source_ids": [
         "S37"
+      ]
+    },
+    {
+      "id": "CR-MINAMOTO",
+      "name": "Minamoto",
+      "ja": "みな本",
+      "kind": "original_artist",
+      "summary": "Original creator of the adult-marriage NTR comic adapted into the 2023 two-part Tsuma ni Damatte Sokubaikai ni Iku n Janakatta OVA.",
+      "source_ids": [
+        "S43"
       ]
     }
   ],
@@ -1602,12 +1638,21 @@
       ]
     },
     {
-      "work_id": "W-QUEEN2",
+      "work_id": "W-TS",
       "entity_type": "organization",
-      "entity_id": "ORG-MEDIABANK",
-      "role": "publisher_review_pending",
+      "entity_id": "ORG-ANTE",
+      "role": "release_label",
       "source_ids": [
-        "S31"
+        "S43"
+      ]
+    },
+    {
+      "work_id": "W-TS",
+      "entity_type": "creator",
+      "entity_id": "CR-MINAMOTO",
+      "role": "original_artist",
+      "source_ids": [
+        "S43"
       ]
     }
   ]
