@@ -74,6 +74,36 @@ assert.ok(C.works.find(w=>w.id==="W-KGB").aliases.some(a=>a.includes("episode"))
 assert.ok(C.credits.some(c=>c.work_id==="W-BAKUNYU"&&c.entity_id==="ORG-QUEEN"&&c.role==="release_label"));
 assert.ok(C.credits.some(c=>c.work_id==="W-BAKUNYU"&&c.entity_id==="CR-GAGARIN"&&c.role==="original_artist"));
 
+
+/* Completion-first pipeline: records, normalized tag vocabulary, and source inventory */
+const facets=new Map(C.taxonomy.facets.map(t=>[t.id,t]));
+unique([...facets.keys()],"taxonomy facet ids");
+assert.ok(facets.has("netorare")&&facets.has("netori")&&facets.has("netorase"),"missing fundamental genre distinctions");
+assert.notEqual(facets.get("netorare").axis,facets.get("cheating").axis,"viewpoint tag must not equal relationship event");
+for(const mapping of C.taxonomy.external_mappings){
+ assert.ok(facets.has(mapping.facet_id),"unrecognized external taxonomy mapping");
+ for(const id of mapping.source_ids)assert.ok(sources.has(id),"unverified external tag source "+id);
+ if(mapping.platform==="UnderHentai")assert.equal(mapping.genre_page_verified,false,"genre URL not independently accessible");
+}
+unique(C.discovery_candidates.map(x=>x.id),"discovery candidate ids");
+const allowedStatuses=new Set(["public-linked","candidate-public","internal-review","context-only"]);
+for(const x of C.discovery_candidates){
+ assert.ok(x.title&&Number.isInteger(x.year)&&x.source_ids.length,"incomplete discovery record");
+ assert.ok(allowedStatuses.has(x.display_status),"illegal discovery status "+x.id);
+ for(const id of x.source_ids)assert.ok(sources.has(id),"orphan discovery source "+x.id+": "+id);
+ for(const id of x.candidate_tag_ids)assert.ok(facets.has(id),"unknown candidate tag "+id);
+ if(x.matched_work_id)assert.ok(works.has(x.matched_work_id),"orphan normalized canonical work");
+ assert.ok(!x.episode_hints.some(v=>!String(v).trim()),"blank episode date hint");
+ if(x.age_context==="school-age-framing"||x.age_context==="age-uncertain-family")assert.equal(x.display_status,"context-only","age-sensitive discovery leak: "+x.id);
+ if(x.display_status==="candidate-public")assert.ok(x.age_context==="adult-spouse-context","provisional public entry must be clearly adult-context: "+x.id);
+ assert.ok(x.artwork_status.includes("no licensed image"),"copyright-provenance of candidate art missing");
+}
+unique(C.coverage_objectives.map(x=>x.id),"coverage objective ids");
+for(const obj of C.coverage_objectives){assert.ok(["blocked","incomplete"].includes(obj.status),"unsupported completeness claim");for(const id of obj.source_ids)assert.ok(sources.has(id),"unlinked coverage source");}
+for(const id of ["cov-netorare-genre","cov-netori-genre"])assert.equal(C.coverage_objectives.find(x=>x.id===id)?.status,"blocked","cannot claim inaccessible genre corpus complete");
+assert.ok(C.discovery_candidates.length>=15,"insufficient breadth-first discovery sample");
+assert.ok(C.discovery_candidates.filter(x=>x.matched_work_id).length>=8,"loss of canonical alias matches");
+
 const snapshot=readFileSync("src/catalog.js","utf8").trim();assert.ok(snapshot.startsWith("window.NetorariaCatalog = "),"client data wrapper missing");const mirrored=JSON.parse(snapshot.slice("window.NetorariaCatalog = ".length).replace(/;$/,""));assert.deepEqual(mirrored,C,"client-side catalog snapshot is out of sync");
-const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/lineage.js")&&html.includes("src/lineage.css"),"release explorer not loaded");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
+const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/lineage.js")&&html.includes("src/lineage.css"),"release explorer not loaded");assert.ok(html.includes("src/discovery.js")&&html.includes("src/discovery.css"),"discovery explorer not loaded");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
 console.log("Validated",C.works.length,"works,",C.releases.length,"release/edition records,",C.sources.length,"sources,",C.chronology.length,"timeline nodes,",C.organizations.length,"organizations,",C.creators.length,"artists,",C.credits.length,"verified credit edges.");
