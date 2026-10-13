@@ -3265,7 +3265,7 @@
       "stage": "discovered",
       "verification": "Genre title and 2019 release verified but individual character age context unresolved",
       "display_status": "context-only",
-      "age_context": "school-age-framing",
+      "age_context": "age-uncertain-family",
       "artwork_status": "no licensed image; original typographic placeholder only",
       "notes": "Historical bibliography only; no promotional discovery due unresolved ages.",
       "last_checked": "2026-10-13"
@@ -3386,10 +3386,11 @@
       "stage": "discovered",
       "verification": "2026 manufacturer SKU original vs compilation distinguished; not newly animated",
       "display_status": "context-only",
-      "age_context": "school-age-framing",
+      "age_context": "age-uncertain-family",
       "artwork_status": "no licensed image; original typographic placeholder only",
       "notes": "Same original series as 2019 candidate; identity resolution pending, no second new-work count.",
-      "last_checked": "2026-10-13"
+      "last_checked": "2026-10-13",
+      "same_as_candidate_id": "D19-SAKU"
     },
     {
       "id": "D26-HITO-REMIX",
@@ -3413,7 +3414,8 @@
       "age_context": "adult-spouse-context",
       "artwork_status": "no licensed image; original typographic placeholder only",
       "notes": "Two discs of same original property; review along D19-HITO; do not multiply unique-work estimates.",
-      "last_checked": "2026-10-13"
+      "last_checked": "2026-10-13",
+      "same_as_candidate_id": "D19-HITO"
     }
   ],
   "coverage_objectives": [
