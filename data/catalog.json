@@ -1,11 +1,11 @@
 {
   "meta": {
     "name": "Netoraria",
-    "version": "0.8.0-completion-first",
+    "version": "0.9.0-backfill",
     "as_of": "2026-10-13",
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
     "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
-    "research_focus": "Completion-first discovery coverage with independent publication/genre/identity/age-confidence; verification and depth follow separately",
+    "research_focus": "manufacturer-source-window enumeration + 2019 backfill, independently upgrade 2026 original episodes while leaving tag-only items in discovery",
     "release_calendar_policy": "A generic adult-media index's listed date is an archival lead, not automatic evidence of the Japan-original publisher release, subtitle availability date or rights for imagery.",
     "source_2025_findings": "Queen Bee 2025 exact product dates and SKUs upgraded from retailer corroboration to primary manufacturer documentation in S61; Merry Jane dates retain retailer level."
   },
@@ -345,6 +345,60 @@
       "url": "https://bangumi.tv/anime/tag/NTR/airtime/2026",
       "title": "Community NTR tag listing, unverified and overinclusive",
       "evidence": "community"
+    },
+    {
+      "id": "S69",
+      "url": "https://www.suruga-ya.jp/product/detail/128072214",
+      "title": "Yue ni Hitozuma wa Netorareta OVA volume 1, Queen Bee QNB-M058, 2019-02-22",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S70",
+      "url": "https://www.suruga-ya.jp/product/detail/128072679",
+      "title": "Yue ni Hitozuma wa Netorareta OVA volume 2, Queen Bee QNB-M061, 2019-04-12",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S71",
+      "url": "https://www.suruga-ya.jp/product/detail/XA20507",
+      "title": "Arakure source comic Yue ni Hitozuma wa Netorareta, Core Magazine 2018-09-29",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S72",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=0&stat=0",
+      "title": "Media Bank Queen Bee manufacturer catalog current page: 2026 original QNB-M190 + other edition and unclassified releases",
+      "evidence": "primary"
+    },
+    {
+      "id": "S73",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=1&stat=0",
+      "title": "Media Bank Queen Bee manufacturer catalog page 2: March 2026 NTR-themed Sakuramiya complete reissue and other works",
+      "evidence": "primary"
+    },
+    {
+      "id": "S74",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=2&stat=0",
+      "title": "Media Bank Queen Bee manufacturer catalog page 3: October 2025 NTR original episodes and November spouse-title reissues",
+      "evidence": "primary"
+    },
+    {
+      "id": "S75",
+      "url": "https://www.lune-soft.jp/ova/type_ova/%E5%AF%9D%E5%8F%96%E3%82%8A%E3%83%BB%E5%AF%9D%E5%8F%96%E3%82%89%E3%82%8C%EF%BC%88ntr%EF%BC%89",
+      "title": "Rune/Lune first-party NTR keyword anime list (visible 2025/26 window), includes originals and compilation reissues",
+      "evidence": "primary"
+    },
+    {
+      "id": "S76",
+      "url": "https://www.suruga-ya.jp/kaitori/kaitori_detail/128073828",
+      "title": "Sakuramiya Shimai no Netorare Kiroku episode 2 2019-09-27 Queen Bee QNB-M065; age context not cleared",
+      "evidence": "retailer"
+    },
+    {
+      "id": "S77",
+      "url": "https://www.suruga-ya.jp/product/detail/XA21143",
+      "title": "Hitozuma Mitsu to Niku original manga, Tsukino Jougi, Core Magazine 2019-07-25",
+      "evidence": "retailer"
     }
   ],
   "works": [
@@ -546,6 +600,7 @@
       "year": 2026,
       "genre": "title-and-community NTR",
       "source_ids": [
+        "S72",
         "S31",
         "S32"
       ],
@@ -558,7 +613,7 @@
         ]
       },
       "characters": [],
-      "note": "Retailer confirms first DVD release on Sept 18, 2026. Full episode count and adaptation credits still require manufacturer verification.",
+      "note": "Queen Bee / Media Bank manufacturer independently confirms its first original 2026 OVA episode on September 18 (QNB-M190). An alleged October 16 continuation is not yet verified as released by manufacturer and stays a future index lead.",
       "visibility": "public",
       "color": [
         "#6a4577",
@@ -815,6 +870,36 @@
         "#55556c",
         "#766074"
       ]
+    },
+    {
+      "id": "W-YUE",
+      "title": "Yue ni Hitozuma wa Netorareta.",
+      "jp": "故に人妻は寝取られた。",
+      "media": "OVA",
+      "label": "Queen Bee",
+      "year": 2019,
+      "genre": "NTR explicitly in original title; original episodes retailer confirmed",
+      "source_ids": [
+        "S69",
+        "S70",
+        "S71"
+      ],
+      "original": {
+        "title": "Yue ni Hitozuma wa Netorareta.",
+        "media": "Commercial manga collection",
+        "creator": "Arakure",
+        "publisher": "Core Magazine",
+        "source_ids": [
+          "S71"
+        ]
+      },
+      "characters": [],
+      "note": "Two retailer-confirmed original Queen Bee animated volumes in February and April 2019, separately linked to a 2018 manga publication. Story details and individual ages not independently verified; adult married-character premise established by title.",
+      "visibility": "public",
+      "color": [
+        "#305773",
+        "#7e4c68"
+      ]
     }
   ],
   "releases": [
@@ -1004,14 +1089,15 @@
       "id": "R26-05",
       "work_id": "W-QUEEN2",
       "date": "2026-09-18",
-      "title": "Netorareta Bakunyuu Tsuma-tachi 2: first DVD",
-      "type": "retailer-confirmed edition",
-      "sku": null,
+      "title": "Netorareta Bakunyuu Tsuma-tachi 2 — first part",
+      "type": "original_ova",
+      "sku": "QNB-M190",
       "source_ids": [
+        "S72",
         "S31"
       ],
       "status": "listed",
-      "confidence": "retailer"
+      "confidence": "publisher"
     },
     {
       "id": "R25-05",
@@ -1167,6 +1253,32 @@
       "sku": "MJAD-399",
       "source_ids": [
         "S54"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
+    },
+    {
+      "id": "R19-YUE-01",
+      "work_id": "W-YUE",
+      "date": "2019-02-22",
+      "title": "Yue ni Hitozuma wa Netorareta — Volume 1",
+      "type": "original_ova",
+      "sku": "QNB-M058",
+      "source_ids": [
+        "S69"
+      ],
+      "status": "listed",
+      "confidence": "retailer"
+    },
+    {
+      "id": "R19-YUE-02",
+      "work_id": "W-YUE",
+      "date": "2019-04-12",
+      "title": "Yue ni Hitozuma wa Netorareta — Volume 2",
+      "type": "original_ova",
+      "sku": "QNB-M061",
+      "source_ids": [
+        "S70"
       ],
       "status": "listed",
       "confidence": "retailer"
@@ -1358,6 +1470,30 @@
       "date": "2025-10-10",
       "title": "Queen Bee's second Netorareta Bakunyuu Tsuma-tachi OVA released (retailer listing).",
       "source_id": "S51"
+    },
+    {
+      "id": "T32",
+      "date": "2018-09-29",
+      "title": "Arakure's source manga Yue ni Hitozuma wa Netorareta published by Core Magazine",
+      "source_id": "S71"
+    },
+    {
+      "id": "T33",
+      "date": "2019-02-22",
+      "title": "Queen Bee first original 2019 OVA Yue ni Hitozuma wa Netorareta, QNB-M058",
+      "source_id": "S69"
+    },
+    {
+      "id": "T34",
+      "date": "2019-04-12",
+      "title": "Queen Bee second original 2019 OVA Yue ni Hitozuma wa Netorareta, QNB-M061",
+      "source_id": "S70"
+    },
+    {
+      "id": "T35",
+      "date": "2026-09-18",
+      "title": "Manufacturer verifies Netorareta Bakunyuu Tsuma-tachi 2 first original episode QNB-M190",
+      "source_id": "S72"
     }
   ],
   "review_queue": [
@@ -1502,7 +1638,8 @@
       "history": "Its 2026 publisher list includes a March compilation of an earlier NTR-titled work. This is a release-label history, not proof of a particular physical animation production studio or that all its works share the theme.",
       "source_ids": [
         "S40",
-        "S61"
+        "S61",
+        "S72"
       ],
       "color": [
         "#855c52",
@@ -1631,6 +1768,25 @@
       "color": [
         "#345b71",
         "#895c83"
+      ]
+    },
+    {
+      "id": "ORG-CORE",
+      "name": "Core Magazine",
+      "ja": "コアマガジン",
+      "kind": "manga_publisher",
+      "summary": "Japanese publisher of multiple original adult manga collections adapted later into anime, including Arakure's 2018 work and Gagarin Kichi's 2024 volume.",
+      "start": null,
+      "end": "2025",
+      "history": "Source bibliography confirms the original manga publication dates separately from animated release dates; this is a manga publisher, not the animation production contractor.",
+      "source_ids": [
+        "S71",
+        "S52",
+        "S77"
+      ],
+      "color": [
+        "#485772",
+        "#546f61"
       ]
     }
   ],
@@ -1779,7 +1935,20 @@
         "S50",
         "S51",
         "S59",
-        "S61"
+        "S61",
+        "S72"
+      ]
+    },
+    {
+      "id": "CR-ARAKURE",
+      "name": "Arakure",
+      "ja": "あらくれ",
+      "kind": "original_artist",
+      "summary": "Original manga artist of Yue ni Hitozuma wa Netorareta; a 2018 Core Magazine comic was adapted into Queen Bee OVAs in 2019.",
+      "source_ids": [
+        "S69",
+        "S70",
+        "S71"
       ]
     }
   ],
@@ -2285,6 +2454,34 @@
       "source_ids": [
         "S61"
       ]
+    },
+    {
+      "work_id": "W-YUE",
+      "entity_type": "organization",
+      "entity_id": "ORG-QUEEN",
+      "role": "release_label",
+      "source_ids": [
+        "S69",
+        "S70"
+      ]
+    },
+    {
+      "work_id": "W-YUE",
+      "entity_type": "organization",
+      "entity_id": "ORG-CORE",
+      "role": "original_manga_publisher",
+      "source_ids": [
+        "S71"
+      ]
+    },
+    {
+      "work_id": "W-YUE",
+      "entity_type": "creator",
+      "entity_id": "CR-ARAKURE",
+      "role": "original_artist",
+      "source_ids": [
+        "S71"
+      ]
     }
   ],
   "relations": [
@@ -2382,6 +2579,26 @@
         "S13"
       ],
       "state": "alias-review"
+    },
+    {
+      "id": "L-YUE-STAFF",
+      "title": "Yue ni Hitozuma 2019 production contractor",
+      "reason": "Original OVA dates and label verifiable. Do not attribute actual physical animation production to Blue Bread from label or footer without animation credits.",
+      "source_ids": [
+        "S69",
+        "S70"
+      ],
+      "state": "verify"
+    },
+    {
+      "id": "L-SAKU-IDENTITY",
+      "title": "2019 Sakuramiya episodes and 2026 same-series compilation",
+      "reason": "Normalize a single series identity and verify character ages before any public fan discovery. The first original 2019 date unverified.",
+      "source_ids": [
+        "S76",
+        "S73"
+      ],
+      "state": "age-review"
     }
   ],
   "taxonomy": {
@@ -2999,6 +3216,204 @@
       "artwork_status": "no licensed image; original typographic placeholder only",
       "notes": "Do not auto-map harassment to cheating/NTR. Editorial-only candidate pending audience relevance.",
       "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D19-YUE",
+      "title": "Yue ni Hitozuma wa Netorareta.",
+      "year": 2019,
+      "media": "OVA",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Original Japanese adult-marriage title explicitly contains 寝取られ; two independently documented original OVA releases.",
+      "episode_hints": [
+        "2019-02-22 QNB-M058",
+        "2019-04-12 QNB-M061"
+      ],
+      "source_ids": [
+        "S69",
+        "S70",
+        "S71"
+      ],
+      "matched_work_id": "W-YUE",
+      "stage": "matched_existing",
+      "verification": "Two releases verified by Japanese specialist retailer; manga original publication documented",
+      "display_status": "public-linked",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Credited source artist Arakure; Core Magazine print edition predates Queen Bee OVA.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D19-SAKU",
+      "title": "Sakuramiya Shimai no Netorare Kiroku",
+      "year": 2019,
+      "media": "OVA",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Original Japanese title contains Netorare; manufacturer establishes 2026 compilation and specialist retailer confirms 2019 episode 2.",
+      "episode_hints": [
+        "2019-09-27 episode 2 QNB-M065",
+        "2026-03-06 complete reissue QNB-M178"
+      ],
+      "source_ids": [
+        "S76",
+        "S73"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Genre title and 2019 release verified but individual character age context unresolved",
+      "display_status": "context-only",
+      "age_context": "school-age-framing",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Historical bibliography only; no promotional discovery due unresolved ages.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D19-HITO",
+      "title": "Hitozuma, Mitsu to Niku",
+      "year": 2019,
+      "media": "OVA",
+      "candidate_tag_ids": [],
+      "tag_basis": "Adult spouse theme evidenced by title, but NTR viewpoint/relationship betrayal not established by manufacturer listing.",
+      "episode_hints": [
+        "2019 originals not yet verified",
+        "2025-11-07 two complete-volume editions QNB-M169/170"
+      ],
+      "source_ids": [
+        "S74",
+        "S77"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Original commercial manga is source-corroborated, but only 2025 compilations confirmed",
+      "display_status": "internal-review",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Creator Tsukino Jougi, Core Magazine manga 2019. Do not mistake 2025 complete editions as new anime episodes.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-MOTHER",
+      "title": "Daisuki na Haha — 1 & 2 Pack",
+      "year": 2025,
+      "media": "OVA compilation",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Rune/Lune directly places pack under its NTR keyword index, content not independently evaluated.",
+      "episode_hints": [
+        "2025-12-26 NTR-category compilation"
+      ],
+      "source_ids": [
+        "S75"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Publisher category and compilation date; original production/character ages not checked",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "New to discovery inventory but not an original 2025 animation release.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D25-FAMILYCOMP",
+      "title": "Kyonyuu Daikazoku Saimin — 1 & 2 Pack",
+      "year": 2025,
+      "media": "OVA compilation",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Publisher NTR keyword; no separate narrative view or age verification.",
+      "episode_hints": [
+        "2025-11-28 publisher category compilation"
+      ],
+      "source_ids": [
+        "S75"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Publisher label and pack date only",
+      "display_status": "context-only",
+      "age_context": "age-uncertain-family",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Family-focused age ambiguity; academic metadata only, no promotion.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-STEP",
+      "title": "Mutturi Dōsukebe Rōgibo Shimai — 1 & 2 Pack",
+      "year": 2026,
+      "media": "OVA compilation",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Official Rune/Lune NTR listing; narrative interpretation pending.",
+      "episode_hints": [
+        "2026-02-27 publisher category compilation"
+      ],
+      "source_ids": [
+        "S75"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Publisher NTR tag and compilation date verified only",
+      "display_status": "internal-review",
+      "age_context": "age-not-assessed",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "No duplicate original anime episodes added; verify ages and original work before public display.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-SAKU-COMP",
+      "title": "Sakuramiya Shimai no Netorare Kiroku — complete edition",
+      "year": 2026,
+      "media": "OVA compilation",
+      "candidate_tag_ids": [
+        "netorare"
+      ],
+      "tag_basis": "Japanese NTR title and official Queen Bee edition information",
+      "episode_hints": [
+        "2026-03-06 QNB-M178 compilation"
+      ],
+      "source_ids": [
+        "S73",
+        "S76"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "2026 manufacturer SKU original vs compilation distinguished; not newly animated",
+      "display_status": "context-only",
+      "age_context": "school-age-framing",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Same original series as 2019 candidate; identity resolution pending, no second new-work count.",
+      "last_checked": "2026-10-13"
+    },
+    {
+      "id": "D26-HITO-REMIX",
+      "title": "Hitozuma, Mitsu to Niku — complete editions",
+      "year": 2025,
+      "media": "OVA compilation",
+      "candidate_tag_ids": [],
+      "tag_basis": "No genre-specific source beyond spouse-story metadata",
+      "episode_hints": [
+        "2025-11-07 QNB-M169",
+        "2025-11-07 QNB-M170"
+      ],
+      "source_ids": [
+        "S74",
+        "S77"
+      ],
+      "matched_work_id": null,
+      "stage": "discovered",
+      "verification": "Publisher format editions; source manga corroborated",
+      "display_status": "internal-review",
+      "age_context": "adult-spouse-context",
+      "artwork_status": "no licensed image; original typographic placeholder only",
+      "notes": "Two discs of same original property; review along D19-HITO; do not multiply unique-work estimates.",
+      "last_checked": "2026-10-13"
     }
   ],
   "coverage_objectives": [
@@ -3041,6 +3456,48 @@
       ],
       "status": "blocked",
       "notes": "Genre page inaccessible through current browser despite menu link. No invented member list or count."
+    }
+  ],
+  "source_observations": [
+    {
+      "id": "OBS-MB22-P1",
+      "source_id": "S72",
+      "source_scope": "Media Bank Queen Bee current listing first-page window",
+      "as_of": "2026-10-13",
+      "observed_items": 10,
+      "full_catalog_total_displayed": 210,
+      "complete": false,
+      "notes": "Only one visible 10-item page manually inspected. Not all 210 publisher-label entries carry an NTR theme. QNB-M190 confirms the September 2026 original episode; unrelated work titles remain unclassified."
+    },
+    {
+      "id": "OBS-MB22-P2",
+      "source_id": "S73",
+      "source_scope": "Media Bank Queen Bee second page window",
+      "as_of": "2026-10-13",
+      "observed_items": 10,
+      "full_catalog_total_displayed": 210,
+      "complete": false,
+      "notes": "Includes March 2026 Sakuramiya full edition QNB-M178. A 2026 complete edition is not a new original anime."
+    },
+    {
+      "id": "OBS-MB22-P3",
+      "source_id": "S74",
+      "source_scope": "Media Bank Queen Bee third page window",
+      "as_of": "2026-10-13",
+      "observed_items": 10,
+      "full_catalog_total_displayed": 210,
+      "complete": false,
+      "notes": "Confirms 2025 NTR-part original dates QNB-M163/165 and two Nov 2025 spouse-original-manga recompilations QNB-M169/170; these are not original episodes."
+    },
+    {
+      "id": "OBS-LUNE-NTR",
+      "source_id": "S75",
+      "source_scope": "Rune/Lune NTR keyword-filtered adult anime 2025–26 visible window",
+      "as_of": "2026-10-13",
+      "observed_items": 12,
+      "full_catalog_total_displayed": null,
+      "complete": false,
+      "notes": "First-party producer NTR category; listing includes editions and themed works, not all age-reviewed. Window includes 12 visible entries; no globally authoritative total."
     }
   ]
 }
