@@ -38,6 +38,19 @@ Research adds aliases for `Natsu Zuma` → `Natsuzuma` while holding UnderHentai
 
 See **[2025 source audit](docs/UNDERHENTAI_2025_RESEARCH_v07.md)** for verified/manufacturer-vs-retailer provenance, candidate triage, content policy and research backlog. Catalog now has **15 works (including restricted/context-only)**, **27 release/edition/game records**, **12 organizations**, **13 creators**, **55 credit links**, **49 documented sources** and **31 historical anchors**. Not all work records represent animation, and only approved adult-oriented animation appears in the public directory.
 
+## v0.8 draft — Completion-first genre discovery
+
+A new mobile-friendly **Discovery Frontier** lets readers filter source-led candidates by year and relationship tags (Netorare, Netori, Netorase, infidelity, cheating and related themes) and inspect clearly labeled evidence/coverage status. The canonical verified **Series Directory** remains separate. A candidate is **not** a verified animation, genre assignment, episode count, released listing, age classification, or official art license.
+
+- **19** 2025–26 candidate records, including aliases to existing series; **12** distinct taxonomy facets; **4** evidence-tracked source coverage objectives.
+- UnderHentai's menu confirms separate Netorare/Netori links, but their individual genre pages were not accessible. **No source-wide member count or percentage is claimed.**
+- Context-only historical/age-sensitive candidates are omitted from the promotional web discovery UI. Adult-premise provisional dossiers are visibly labeled, not presented as recommended streaming content.
+- Source-indexed entries dated after **2026-10-13** are future listings until independently confirmed as released.
+- The 15 works and 27 entries from v0.7 are **not** multiplied by this broader candidate inventory; existing known titles link to the same IDs.
+- The visual interface keeps original graphic placeholders instead of redistributing publisher cover files.
+
+Read [completion-first methodology](docs/COMPLETION_FIRST_v08.md) before interpreting counts or importing further candidate feeds.
+
 ## Next development
 
 - Import the complete v0.3/v0.3.1 database with source attribution and validation tests.
