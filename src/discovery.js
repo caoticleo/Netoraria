@@ -50,4 +50,5 @@ target.scrollIntoView({behavior:"smooth",block:"start"})
 }
 shell();
 const desktop=document.querySelector(".topnav");if(desktop){const a=document.createElement("a");a.href="#discovery";a.textContent="Discover";desktop.appendChild(a)}
+const mobile=document.querySelector(".mobilebar");if(mobile){mobile.innerHTML='<a href="#home"><span>⌂</span>Home</a><a href="#catalog"><span>▦</span>Series</a><a href="#discovery"><span>⌕</span>Discover</a><a href="#studios"><span>◈</span>Studios</a><a href="#release-explorer"><span>◷</span>Releases</a>'}
 })();
