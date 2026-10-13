@@ -11,5 +11,6 @@ assert.ok(C.works.some(w=>w.visibility==="restricted-context"),"missing restrict
 assert.ok(C.releases.some(r=>r.type==="compilation"),"compilation distinction missing");
 assert.ok(C.releases.some(r=>r.type==="original_ova"),"original episode distinction missing");
 assert.ok(C.releases.filter(r=>r.date.startsWith("2026")).length>=5);
+const snapshot=readFileSync("src/catalog.js","utf8").trim();assert.ok(snapshot.startsWith("window.NetorariaCatalog = "),"client data wrapper missing");const mirrored=JSON.parse(snapshot.slice("window.NetorariaCatalog = ".length).replace(/;$/,""));assert.deepEqual(mirrored,C,"client-side catalog snapshot is out of sync");
 const html=readFileSync("index.html","utf8");assert.ok(html.includes("src/catalog.js")&&html.indexOf("src/catalog.js")<html.indexOf("src/app.js"));
 console.log("Validated",C.works.length,"works,",C.releases.length,"release/edition records,",C.sources.length,"sources,",C.chronology.length,"timeline nodes.");
