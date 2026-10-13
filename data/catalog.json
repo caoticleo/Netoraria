@@ -6,7 +6,8 @@
     "scope": "Non-graphic bibliographic metadata; publisher/retailer/community findings have different confidence",
     "source_lineage": "H-Archive v0.3 (6 works, 14 editions, 22 milestones), expanded October 13, 2026",
     "research_focus": "Independent adult-animation calendar as lead; publisher/retailer bibliographic verification and source-medium/credit crosschecks",
-    "release_calendar_policy": "A generic adult-media index's listed date is an archival lead, not automatic evidence of the Japan-original publisher release, subtitle availability date or rights for imagery."
+    "release_calendar_policy": "A generic adult-media index's listed date is an archival lead, not automatic evidence of the Japan-original publisher release, subtitle availability date or rights for imagery.",
+    "source_2025_findings": "Queen Bee 2025 exact product dates and SKUs upgraded from retailer corroboration to primary manufacturer documentation in S61; Merry Jane dates retain retailer level."
   },
   "sources": [
     {
@@ -296,6 +297,12 @@
       "url": "https://www.suruga-ya.jp/product/other/128086782",
       "title": "Japanese secondary marketplace lists 2025 family-drama anime and WHITE BEAR release label",
       "evidence": "retailer"
+    },
+    {
+      "id": "S61",
+      "url": "https://www.mediabank.co.jp/label.php?id=22&pg=2&stat=0",
+      "title": "Media Bank primary manufacturer Queen Bee 2025 original episodes: 2025-09-12 QNB-M163 and 2025-10-10 QNB-M165",
+      "evidence": "primary"
     }
   ],
   "works": [
@@ -342,6 +349,9 @@
       "color": [
         "#2d5368",
         "#66518c"
+      ],
+      "aliases": [
+        "Kegareboshi episodes 01/02 — third-party ordinal, publisher color titles preferred"
       ]
     },
     {
@@ -458,6 +468,10 @@
       "color": [
         "#4d586f",
         "#cf8561"
+      ],
+      "aliases": [
+        "Natsu Zuma",
+        "Natsu-Zuma"
       ]
     },
     {
@@ -678,6 +692,7 @@
       "year": 2025,
       "genre": "NTR explicit in Japanese original title",
       "source_ids": [
+        "S61",
         "S50",
         "S51",
         "S52"
@@ -1066,12 +1081,13 @@
       "date": "2025-09-12",
       "title": "Netorareta Bakunyuu Tsuma-tachi — first part",
       "type": "original_ova",
-      "sku": null,
+      "sku": "QNB-M163",
       "source_ids": [
+        "S61",
         "S50"
       ],
       "status": "listed",
-      "confidence": "retailer"
+      "confidence": "publisher"
     },
     {
       "id": "R25-QUEEN-02",
@@ -1079,12 +1095,13 @@
       "date": "2025-10-10",
       "title": "Netorareta Bakunyuu Tsuma-tachi — second part",
       "type": "original_ova",
-      "sku": null,
+      "sku": "QNB-M165",
       "source_ids": [
+        "S61",
         "S51"
       ],
       "status": "listed",
-      "confidence": "retailer"
+      "confidence": "publisher"
     },
     {
       "id": "R25-MJ-01",
@@ -1424,7 +1441,8 @@
       "source_ids": [
         "S40",
         "S41",
-        "S46"
+        "S46",
+        "S61"
       ],
       "color": [
         "#665365",
@@ -1441,7 +1459,8 @@
       "end": "2026",
       "history": "Its 2026 publisher list includes a March compilation of an earlier NTR-titled work. This is a release-label history, not proof of a particular physical animation production studio or that all its works share the theme.",
       "source_ids": [
-        "S40"
+        "S40",
+        "S61"
       ],
       "color": [
         "#855c52",
@@ -1717,7 +1736,8 @@
         "S52",
         "S50",
         "S51",
-        "S59"
+        "S59",
+        "S61"
       ]
     }
   ],
@@ -2170,7 +2190,8 @@
       "role": "release_label",
       "source_ids": [
         "S50",
-        "S51"
+        "S51",
+        "S61"
       ]
     },
     {
@@ -2181,7 +2202,8 @@
       "source_ids": [
         "S50",
         "S51",
-        "S52"
+        "S52",
+        "S61"
       ]
     },
     {
@@ -2211,6 +2233,15 @@
       "role": "original_artist",
       "source_ids": [
         "S56"
+      ]
+    },
+    {
+      "work_id": "W-BAKUNYU",
+      "entity_type": "organization",
+      "entity_id": "ORG-MEDIABANK",
+      "role": "publisher",
+      "source_ids": [
+        "S61"
       ]
     }
   ],
